@@ -1,0 +1,209 @@
+version: "2.0"
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - hi there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - goodmorning
+      - goodevening
+      - good afternoon
+      - wassup
+      - hello!
+      - hey!
+
+  - intent: goodbye
+    examples: |
+      - good afternoon
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - night
+      - have a nice day
+      - have a good day
+      - have a good day!
+      - see you around
+      - bye bye
+      - see you later
+      - see ya!
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - right
+      - true
+      - yah
+      - yeah
+      - exactly
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+      - false
+      - nope
+
+  - intent: App_info
+    examples: |
+      - what is AL testing Tool?
+      - What does Al testing Tool do?
+      - what does this app do?
+      - app information
+      - app info
+      - what is this for?
+
+  - intent: Creator_info
+    examples: |
+      - Who create the AI testing tool?
+      - Who is the creator?
+      - who is the Author?
+
+  - intent: create_account
+    examples: |
+      - Show me how to create user?
+      - Show me hos to create account?
+      - create user account
+      - create account
+      - create user
+
+  - intent: Reset_password
+    examples: |
+      - How can I reset my password ?
+      - How to reset password ?
+      - reset password
+      - Ways to reset password
+      - Show me how to reset password
+      - How to get my password back
+
+  - intent: Contact_admin
+    examples: |
+      - How can I contact the admin?
+      - How to cantact admin?
+      - Contact admin?
+      - How to send feedback?
+      - How to submit Ticket?
+      - submit a ticket?
+
+  - intent: Get_start
+    examples: |
+      - Show me how to start?
+      - What is the first step?
+      - How to start?
+      - how to get start?
+      - what should i do first?
+
+  - intent: Greate_input
+    examples: |
+      - input file
+      - how to upload file data
+      - How to upload Json file
+      - upload data file
+      - upload file
+
+  - intent: data_file_info
+    examples: |
+      - data file
+      - what is data file that the app support
+      - data file support
+      - file support
+      - what does data type support
+
+  - intent: Graph_info
+    examples: |
+      - What does the  graph fuction do?
+      - What is the Data administration with graph?
+      - What does the Data administration with graph do?
+      - Graph
+      - Data administration with graph
+
+  - intent: Create_graph
+    examples: |
+      - How can I create a graph?
+      - How can I start using the graph tool?
+      - create graph
+      - input graph
+      - draw graph
+
+  - intent: Create_new_graph
+    examples: |
+      - create new graph
+      - How to create new graph
+      - show me how to create new graph
+
+  - intent: Input_graph
+    examples: |
+      - input graph
+      - How to create graph from the input data
+      - create graph from input file
+
+  - intent: Add_note
+    examples: |
+      - Could you show me how to add node?
+      - add note
+      - add new node
+      - How to add node to graph?
+
+  - intent: Delete_node
+    examples: |
+      - Show me how to delete node
+      - delete node
+      - how to delete node
+
+  - intent: Delete_multi_node
+    examples: |
+      - Can I delete multiple nodes?
+      - Can I delete multiple nodes at a time?
+
+  - intent: Modify_node
+    examples: |
+      - could I change the graph
+      - could I change order of the graph
+      - how can I modify node
+      - modify node
+      - Modify node
+
+  - intent: Test_case_group_info
+    examples: |
+      - What is Test cases group
+      - Test cases group
+
+  - intent: Create_test_cases
+    examples: |
+      - How to create test cases
+      - create test case group
+      - Show me create test cases steps
+
+  - intent: Exacute_test_cases
+    examples: |
+      - exacute test case
+      - Exacute test case
+      - How to exacuter test case
+
+  - intent: Generate_test_cases
+    examples: |
+      - Generate test case
+      - generate test cases
+      - how to generate test cases?
+      - how to generate test cases
+
+  - intent: Function_support
+    examples: |
+      - What functions are supported by this tool?

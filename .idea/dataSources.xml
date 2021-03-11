@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="rasa" uuid="c09f1df2-a40a-47ad-97cd-ab9126927395">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\Projects\CMPE195B\rasa.db</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="events" uuid="df57cddc-26a9-4cae-abc3-49f00d06b8e2">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\Projects\CMPE195B\events.db</jdbc-url>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,51 @@
+version: "2.0"
+stories:
+- story: happy path 1 (C:\Users\tpssa\AppData\Local\Temp\tmpksgkuj6z\4976bb3945634cc6992ea5eb2c8c45aa_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great  # predicted: greet: amazing
+  - action: utter_happy  # predicted: utter_greet
+- story: happy path 2 (C:\Users\tpssa\AppData\Local\Temp\tmpksgkuj6z\4976bb3945634cc6992ea5eb2c8c45aa_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great  # predicted: greet: amazing
+  - action: utter_happy  # predicted: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye  # predicted: action_default_fallback
+- story: sad path 1 (C:\Users\tpssa\AppData\Local\Temp\tmpksgkuj6z\4976bb3945634cc6992ea5eb2c8c45aa_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: nlu_fallback: not good
+  - action: utter_cheer_up  # predicted: utter_greet
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: affirm
+  - action: utter_happy  # predicted: utter_feel_good
+- story: sad path 2 (C:\Users\tpssa\AppData\Local\Temp\tmpksgkuj6z\4976bb3945634cc6992ea5eb2c8c45aa_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: nlu_fallback: not good
+  - action: utter_cheer_up  # predicted: utter_greet
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny
+  - action: utter_goodbye  # predicted: action_default_fallback
+- story: sad path 3 (C:\Users\tpssa\AppData\Local\Temp\tmpksgkuj6z\4976bb3945634cc6992ea5eb2c8c45aa_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: nlu_fallback: very terrible
+  - action: utter_cheer_up  # predicted: utter_greet
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny
+  - action: utter_goodbye  # predicted: action_default_fallback
+- story: say goodbye (C:\Users\tpssa\AppData\Local\Temp\tmpksgkuj6z\4976bb3945634cc6992ea5eb2c8c45aa_test_stories.yml)
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye  # predicted: action_default_fallback
+- story: bot challenge (C:\Users\tpssa\AppData\Local\Temp\tmpksgkuj6z\4976bb3945634cc6992ea5eb2c8c45aa_test_stories.yml)
+  steps:
+  - intent: bot_challenge  # predicted: goodbye: are you a bot?
+  - action: utter_iamabot  # predicted: utter_greet

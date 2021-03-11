@@ -1,0 +1,67 @@
+version: "2.0"
+stories:
+  - story: Greeting
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: App_information
+    steps:
+      - intent: App_info
+      - action: utter_App_info
+
+  - story: Creator_info
+    steps:
+      - intent: Creator_info
+      - action: utter_Creator_info
+
+  - story: Create account
+    steps:
+      - intent: create_account
+      - action: utter_create_account
+
+  - story: Reset password
+    steps:
+      - intent: reset_password
+      - action: utter_reset_password
+
+  - story: Contact admin
+    steps:
+      - intent: Contact_admin
+      - action: utter_contact_admin
+
+  - story: Function Support
+    steps:
+      - intent: function_support
+      - action: utter_function_support
+
+  - story: Test Case Group Info
+    steps:
+      - intent: Test_case_group_info
+      - action: utter_test_case_group_info
+
+  - story: Modify Node
+    steps:
+      - intent: Modify_node
+      - action: utter_modify_node
+
+  - story: Create Test Case
+    steps:
+      - intent: Create_test_cases
+      - action: utter_create_test_cases
+
+  - story: Delete Node
+    steps:
+      - intent: Delete_node
+      - action: utter_delete_node   
+
+  - story: Delete Multi Node
+    steps:
+      - intent: Delete_multi_node
+      - action: utter_delete_multi_node   
+
+  - story: did_that_help_affirm
+    steps:
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_feel_good

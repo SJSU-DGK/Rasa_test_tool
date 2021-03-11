@@ -1,0 +1,177 @@
+version: "2.0"
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+  - greet:
+      use_entities: true
+  - goodbye:
+      use_entities: true
+  - affirm:
+      use_entities: true
+  - deny:
+      use_entities: true
+  - Reset_password:
+      use_entities: true
+  - Creator_info:
+      use_entities: true
+  - Greate_input:
+      use_entities: true
+  - create_account:
+      use_entities: true
+  - Contact_admin:
+      use_entities: true
+  - Get_start:
+      use_entities: true
+  - data_file_info:
+      use_entities: true
+  - App_info:
+      use_entities: true
+  - Delete_node:
+      use_entities: true
+  - Graph_info:
+      use_entities: true
+  - Create_graph:
+      use_entities: true
+  - Exacute_test_cases:
+      use_entities: true
+  - Add_note:
+      use_entities: true
+  - Create_new_graph:
+      use_entities: true
+  - Generate_test_cases:
+      use_entities: true
+  - Modify_node:
+      use_entities: true
+  - Create_test_cases:
+      use_entities: true
+  - Input_graph:
+      use_entities: true
+  - Test_case_group_info:
+      use_entities: true
+  - Delete_multi_node:
+      use_entities: true
+  - Function_support:
+      use_entities: true
+entities: []
+slots: {}
+
+responses:
+  utter_greet:
+    - text: Greettinng. I am Chatbot Assistant power for the AI testing tool. My primary tasks are provide user information and guidace of the AI testing tool features. If you want to know list of available I support please type "list" or "functions" .
+
+  utter_did_that_help:
+    - text: Did that help you?
+
+  utter_goodbye:
+    - text: Bye
+
+  utter_App_info:
+    - text: edit app  info
+
+  utter_Creator_info:
+    - text: edit creator info
+
+  utter_create_account:
+    - text: Here is how to create a new account
+
+        First create an account with “Register Here”
+
+        Then enter your user name and password
+
+        The hit "Register" to create a new account
+
+  utter_reset_password:
+    - text: Unfortunately, we currently do not have this facility
+
+        User will need to contact the admin
+
+  utter_feel_good:
+    - text: good
+
+  utter_feel_bad:
+    - text: sorry
+
+  utter_Author:
+    - text: Author
+
+  utter_contact_admin:
+    - text: You can find the contact information in the webpage
+
+  utter_Create_input:
+    - text: input file
+
+  utter_data_file_info:
+    - text: file extend. data file support?
+
+  utter_function_support:
+    - text: Our application are currently support is
+
+        Input and context tree modeling,
+
+        Test case modeling,
+
+        Test case input modeling
+
+  utter_graph_info:
+    - text: sorry
+  utter_create_graph:
+    - text: sorry
+  utter_create_new_graph:
+    - text: sorry
+  utter_input_graph:
+    - text: sorry
+
+  utter_input_tree:
+    - text: You can upload your JSON file in DATA ADMINISTRATION tab
+        OR you can create the tree manually in DATA ADMINISTRATION WITH GRAPH tab under GET STARTED
+
+  utter_upload_JSON:
+    - text: In DATA ADMINISTRATION tab, click Browse button
+        Select the JSON file you want, you need to specify the file type then click Submit.
+
+  utter_add_note:
+    - text: sorry
+
+  utter_delete_node:
+    - text: Go Navigation
+        Login → Get Started → DATA ADMINISTRATION WITH GRAPH
+
+        Select your tree, Move mouse over the node
+
+        Right click on it and an option to delete the node will be displayed.
+
+  utter_delete_multi_node:
+    - text: Sorry, you have to delete nodes one by one.
+
+  utter_modify_node:
+    - text: Go Navigation
+
+        Login → Get Started → DATA ADMINISTRATION WITH GRAPH
+
+        Select your tree, Move mouse over the node
+
+        Right click on it and an option to modify the node will be displayed.
+
+  utter_test_case_group_info:
+    - text: AI testing tools provide users with a tool
+        to help manage data in the form of data tree.
+
+        Users can freely interact and edit their data by
+        adding, deleting, and moving data nodes to suit their purpose.
+
+  utter_create_test_cases:
+    - text: We provide two possible options in creating graph
+        which are make a new graph from scratch and draw it from the imported data file.
+
+  utter_exacute_test_cases:
+    - text: sorry
+  utter_generate_test_cases:
+    - text: sorry
+
+actions:
+  - did_that_help
+forms: {}
+e2e_actions: []
