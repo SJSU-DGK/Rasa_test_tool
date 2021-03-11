@@ -1,0 +1,23 @@
+echo "# rasatesttool" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/duytranvinh/rasatesttool.git
+git push -u origin main
+
+Download git bash: https://git-scm.com/download/win
+right click inside a folder, chose git bash
+in git bash, type:
+
+First time:
+git clone [link]
+git status
+
+To push into github:
+git add .
+git commit -m "message"
+git push origin main
+
+To pull (update) git before working
+git pull (download)
