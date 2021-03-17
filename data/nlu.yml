@@ -48,6 +48,8 @@ nlu:
       - yah
       - yeah
       - exactly
+      - ya
+      - t
 
   - intent: deny
     examples: |
@@ -60,6 +62,7 @@ nlu:
       - not really
       - false
       - nope
+      - f
 
   - intent: App_info
     examples: |
@@ -69,20 +72,28 @@ nlu:
       - app information
       - app info
       - what is this for?
+      - Can you tell me about the app?
+      - tell me about the app
 
   - intent: Creator_info
     examples: |
       - Who create the AI testing tool?
       - Who is the creator?
       - who is the Author?
+      - who created this tool?
+      - who created this app?
 
   - intent: create_account
     examples: |
       - Show me how to create user?
-      - Show me hos to create account?
+      - Show me how to create account?
       - create user account
       - create account
       - create user
+      - how to create account
+      - how to create user
+      - steps to create account
+      - steps to create user
 
   - intent: Reset_password
     examples: |
@@ -92,6 +103,8 @@ nlu:
       - Ways to reset password
       - Show me how to reset password
       - How to get my password back
+      - steps to reset password
+      - how to reset account
 
   - intent: Contact_admin
     examples: |
@@ -101,14 +114,17 @@ nlu:
       - How to send feedback?
       - How to submit Ticket?
       - submit a ticket?
+      - ways to contact
+      - how to contact
 
   - intent: Get_start
     examples: |
       - Show me how to start?
       - What is the first step?
       - How to start?
-      - how to get start?
-      - what should i do first?
+      - how to get started?
+      - what should I do first?
+      - what to do first
 
   - intent: Greate_input
     examples: |
