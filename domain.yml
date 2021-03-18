@@ -174,9 +174,6 @@ responses:
 
   utter_generate_test_cases:
     - text: sorry
-
-  utter_test_branch:
-    - text: duy branch
     
 actions:
   - did_that_help
