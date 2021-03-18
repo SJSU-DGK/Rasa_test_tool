@@ -126,7 +126,7 @@ nlu:
       - what should I do first?
       - what to do first
 
-  - intent: Greate_input
+  - intent: Create_input
     examples: |
       - input file
       - how to upload file data
@@ -141,10 +141,13 @@ nlu:
       - data file support
       - file support
       - what does data type support
+      - data file information
+      - tell me about data file
+      - i want to know about data file
 
   - intent: Graph_info
     examples: |
-      - What does the  graph fuction do?
+      - What does the  graph function do?
       - What is the Data administration with graph?
       - What does the Data administration with graph do?
       - Graph
@@ -157,6 +160,7 @@ nlu:
       - create graph
       - input graph
       - draw graph
+      - how to create a graph
 
   - intent: Create_new_graph
     examples: |
@@ -176,50 +180,75 @@ nlu:
       - add note
       - add new node
       - How to add node to graph?
+      - how to add node
+      - steps to add node
+      - ways to add node
 
   - intent: Delete_node
     examples: |
       - Show me how to delete node
       - delete node
       - how to delete node
+      - how to delete node
+      - steps to delete node
+      - ways to delete node
 
   - intent: Delete_multi_node
     examples: |
       - Can I delete multiple nodes?
       - Can I delete multiple nodes at a time?
+      - Can I delete multiple nodes at the same time?
+      - can I delete a group of nodes?
+      - how to delete multiple nodes
+      - how to delete many nodes at the same time
+      - delete multiple nodes
+      - delete many nodes
 
   - intent: Modify_node
     examples: |
-      - could I change the graph
-      - could I change order of the graph
+      - can I change the graph
+      - can I change order of the graph
       - how can I modify node
-      - modify node
+      - how to modify node
+      - steps to modify node
+      - ways to modify node
       - Modify node
 
   - intent: Test_case_group_info
     examples: |
       - What is Test cases group
       - Test cases group
+      - test cases group information
+      - tell me about test cases group
+      - show me test cases group
 
   - intent: Create_test_cases
     examples: |
       - How to create test cases
       - create test case group
       - Show me create test cases steps
+      - show me how to create test cases
+      - steps to create test cases
+      - ways to create test cases
 
-  - intent: Exacute_test_cases
+  - intent: Execute_test_cases
     examples: |
-      - exacute test case
-      - Exacute test case
+      - ways to execute test case
+      - Execute test case
       - How to exacuter test case
+      - steps to execute test case
 
   - intent: Generate_test_cases
     examples: |
       - Generate test case
-      - generate test cases
+      - ways to generate test cases
+      - steps to generate test cases
       - how to generate test cases?
       - how to generate test cases
+      - show me how to generate test cases
 
   - intent: Function_support
     examples: |
       - What functions are supported by this tool?
+      - what can this tool do?
+      - what does this tool support?
