@@ -38,6 +38,7 @@ stories:
     steps:
     - intent: Contact_admin
     - action: utter_contact_admin
+    
   - story: Create_input
     steps:
     - intent: Create_input
@@ -103,10 +104,10 @@ stories:
     - intent: Delete_multi_node
     - action: utter_delete_multi_node
 
-  - story: Exacute_test_cases
+  - story: Execute_test_cases
     steps:
-    - intent: Exacute_test_cases
-    - action: utter_exacute_test_cases
+    - intent: Execute_test_cases
+    - action: utter_execute_test_cases
 
   - story: Generate_test_cases
     steps:

@@ -122,6 +122,7 @@ responses:
 
   utter_graph_info:
     - text: sorry
+    
   utter_create_graph:
     - text: You can create a new graph by go to
         · Get Started
@@ -194,6 +195,15 @@ responses:
   utter_sharing_access:
     - text: Sorry, there is no immediate plan to add this feature but as a workaround, the team can have common login between the teammates.
 
+  utter_information_list:
+    - text: ""
+
+  utter_feature_list:
+    - text: ""
+
+  utter_please_rephrase:
+    - text: ""
+  
   utter_generate_test_cases:
     - text: sorry
 
