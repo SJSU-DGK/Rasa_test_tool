@@ -173,7 +173,7 @@ responses:
     - text: Sorry, there is no immediate plan to add this feature but as a workaround, the team can have common login between the teammates.
 
   utter_abcd:
-    - text: test branch
+    - text: test branch x2
 
   utter_generate_test_cases:
     - text: sorry
