@@ -35,7 +35,7 @@ intents:
       use_entities: true
   - Create_graph:
       use_entities: true
-  - Exacute_test_cases:
+  - Execute_test_cases:
       use_entities: true
   - Add_note:
       use_entities: true
@@ -76,14 +76,14 @@ responses:
           title: Feature list
         - payload: Information list
           title: Information list
-      text: Greettinng. I am Chatbot Assistant power for the AI testing tool. My primary tasks are provide user information and guidace of the AI testing tool features. Here are some suggestion to explore our app.
+      text: Greeting. I am Chatbot Assistant power for the AI testing tool. My primary tasks are provide user information and guidace of the AI testing tool features. Here are some suggestion to explore our app.
   utter_feature_list:
     - text: |
         We support you to use these features:
          - Graph
          - Input file
          - generate test cases
-         - exacute test case group
+         - execute test case group
   utter_information_list:
     - text: |
         These are information we would provide you:
@@ -175,7 +175,7 @@ responses:
         Users can freely interact and edit their data by adding, deleting, and moving data nodes to suit their purpose.
   utter_create_test_cases:
     - text: We provide two possible options in creating graph which are make a new graph from scratch and draw it from the imported data file.
-  utter_exacute_test_cases:
+  utter_execute_test_cases:
     - text: sorry
   utter_generate_test_cases:
     - text: sorry
