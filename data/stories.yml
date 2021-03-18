@@ -1,67 +1,120 @@
 version: "2.0"
 stories:
-  - story: Greeting
+  - story: Greeting_featurelist
     steps:
-      - intent: greet
-      - action: utter_greet
+    - intent: greet
+    - action: utter_greet
+    - intent: feature_list
+    - action: utter_feature_list
+
+  - story: Greeting_informationlist
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: information_list
+    - action: utter_information_list
 
   - story: App_information
     steps:
-      - intent: App_info
-      - action: utter_App_info
+    - intent: App_info
+    - action: utter_App_info
 
   - story: Creator_info
     steps:
-      - intent: Creator_info
-      - action: utter_Creator_info
+    - intent: Creator_info
+    - action: utter_Creator_info
 
   - story: Create account
     steps:
-      - intent: create_account
-      - action: utter_create_account
+    - intent: create_account
+    - action: utter_create_account
 
   - story: Reset password
     steps:
-      - intent: reset_password
-      - action: utter_reset_password
+    - intent: reset_password
+    - action: utter_reset_password
 
   - story: Contact admin
     steps:
-      - intent: Contact_admin
-      - action: utter_contact_admin
+    - intent: Contact_admin
+    - action: utter_contact_admin
+  - story: Create_input
+    steps:
+    - intent: Create_input
+    - action: utter_Create_input
+
+  - story: data_file_info
+    steps:
+    - intent: data_file_info
+    - action: utter_data_file_info
+
+  - story: Graph_info
+    steps:
+    - intent: Graph_info
+    - action: utter_graph_info
+
+  - story: Create_graph
+    steps:
+    - intent: Create_graph
+    - action: utter_create_graph
+
+  - story: Create_new_graph
+    steps:
+    - intent: Create_new_graph
+    - action: utter_create_new_graph
+
+  - story: Input_graph
+    steps:
+    - intent: Input_graph
+    - action: utter_input_graph
+
+  - story: Add_note
+    steps:
+    - intent: Add_note
+    - action: utter_add_note
 
   - story: Function Support
     steps:
-      - intent: function_support
-      - action: utter_function_support
+    - intent: function_support
+    - action: utter_function_support
 
   - story: Test Case Group Info
     steps:
-      - intent: Test_case_group_info
-      - action: utter_test_case_group_info
+    - intent: Test_case_group_info
+    - action: utter_test_case_group_info
 
   - story: Modify Node
     steps:
-      - intent: Modify_node
-      - action: utter_modify_node
+    - intent: Modify_node
+    - action: utter_modify_node
 
   - story: Create Test Case
     steps:
-      - intent: Create_test_cases
-      - action: utter_create_test_cases
+    - intent: Create_test_cases
+    - action: utter_create_test_cases
 
   - story: Delete Node
     steps:
-      - intent: Delete_node
-      - action: utter_delete_node   
+    - intent: Delete_node
+    - action: utter_delete_node
 
   - story: Delete Multi Node
     steps:
-      - intent: Delete_multi_node
-      - action: utter_delete_multi_node   
+    - intent: Delete_multi_node
+    - action: utter_delete_multi_node
+
+  - story: Exacute_test_cases
+    steps:
+    - intent: Exacute_test_cases
+    - action: utter_exacute_test_cases
+
+  - story: Generate_test_cases
+    steps:
+    - intent: Generate_test_cases
+    - action: utter_generate_test_cases
 
   - story: did_that_help_affirm
     steps:
-      - action: utter_did_that_help
-      - intent: affirm
-      - action: utter_feel_good
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_feel_good
