@@ -35,11 +35,7 @@ intents:
       use_entities: true
   - Create_graph:
       use_entities: true
-<<<<<<< Updated upstream
-  - Exacute_test_cases:
-=======
   - Execute_test_cases:
->>>>>>> Stashed changes
       use_entities: true
   - Add_note:
       use_entities: true
@@ -59,8 +55,6 @@ intents:
       use_entities: true
   - Function_support:
       use_entities: true
-<<<<<<< Updated upstream
-=======
   - reset_password:
       use_entities: true
   - function_support:
@@ -73,74 +67,11 @@ intents:
       use_entities: true
   - Create_input:
       use_entities: true
->>>>>>> Stashed changes
 entities: []
 slots: {}
 
 responses:
   utter_greet:
-<<<<<<< Updated upstream
-    - text: Greeting. I am Chatbot Assistant power for the AI testing tool. My
-        primary tasks are provide user information and guide of the AI testing tool
-        features. If you want to know list of available I support please type "list" or "functions" .
-
-  utter_did_that_help:
-    - text: Did that help you?
-
-  utter_goodbye:
-    - text: Bye
-
-  utter_App_info:
-    - text: edit app  info
-
-  utter_Creator_info:
-    - text: edit creator info
-
-  utter_create_account:
-    - text: Here is how to create a new account
-
-        First create an account with “Register Here”
-
-        Then enter your user name and password
-
-        The hit "Register" to create a new account
-
-  utter_reset_password:
-    - text: Unfortunately, we currently do not have this facility
-
-        User will need to contact the admin
-
-  utter_feel_good:
-    - text: Greet!
-      image: "./images/cute.jpg"
-
-  utter_feel_bad:
-    - text: Sorry to hear that you are not doing well!
-
-  utter_Author:
-    - text: Author
-
-
-  utter_contact_admin:
-    - text: You can find the contact information in the webpage
-      image: "./images/cute.jpg"
-
-  utter_Create_input:
-    - text: input file
-
-  utter_data_file_info:
-    - text: file extend. data file support?
-
-  utter_function_support:
-    - text: Our application are currently support is
-
-        Input and context tree modeling,
-
-        Test case modeling,
-
-        Test case input modeling
-
-=======
     - buttons:
         - payload: Feature list
           title: Feature list
@@ -195,7 +126,6 @@ responses:
         Input and context tree modeling,
         Test case modeling,
         Test case input modeling
->>>>>>> Stashed changes
   utter_graph_info:
     - text: sorry
 
@@ -224,67 +154,6 @@ responses:
         · Then upload your graph
 
   utter_input_tree:
-<<<<<<< Updated upstream
-    - text: You can upload your JSON file in DATA ADMINISTRATION tab
-        OR you can create the tree manually in DATA ADMINISTRATION WITH GRAPH tab under GET STARTED
-
-  utter_upload_JSON:
-    - text: In DATA ADMINISTRATION tab, click Browse button
-        Select the JSON file you want, you need to specify the file type then click Submit.
-
-  utter_add_note:
-    - text: sorry
-
-  utter_delete_node:
-    - text: Go Navigation
-        Login → Get Started → DATA ADMINISTRATION WITH GRAPH
-
-        Select your tree, Move mouse over the node
-
-        Right click on it and an option to delete the node will be displayed.
-
-  utter_delete_multi_node:
-    - text: Sorry, you have to delete nodes one by one.
-
-  utter_modify_node:
-    - text: Go Navigation
-
-        Login → Get Started → DATA ADMINISTRATION WITH GRAPH
-
-        Select your tree, Move mouse over the node
-
-        Right click on it and an option to modify the node will be displayed.
-
-  utter_test_case_group_info:
-    - text: AI testing tools provide users with a tool
-        to help manage data in the form of data tree.
-
-        Users can freely interact and edit their data by
-        adding, deleting, and moving data nodes to suit their purpose.
-
-  utter_create_test_cases:
-    - text: We provide two possible options in creating graph
-        which are make a new graph from scratch and draw it from the imported data file.
-
-  utter_execute_test_cases:
-    - text: sorry
-
-  utter_sharing_access:
-    - text: Sorry, there is no immediate plan to add this feature but as a workaround, the team can have common login between the teammates.
-
-  utter_information_list:
-    - text: ""
-
-  utter_feature_list:
-    - text: ""
-
-  utter_please_rephrase:
-    - text: ""
-  
-  utter_generate_test_cases:
-    - text: sorry
-
-=======
     - text: You can upload your JSON file in DATA ADMINISTRATION tab OR you can create the tree manually in DATA ADMINISTRATION WITH GRAPH tab under GET STARTED
   utter_add_note:
     - text: sorry
@@ -313,7 +182,6 @@ responses:
     - text: sorry
   utter_please_rephrase:
     - text: I'm sorry, I didn't quite understand that. Could you rephrase?
->>>>>>> Stashed changes
 actions:
   - did_that_help
 forms: {}
