@@ -60,7 +60,9 @@ slots: {}
 
 responses:
   utter_greet:
-    - text: Greettinng. I am Chatbot Assistant power for the AI testing tool. My primary tasks are provide user information and guidace of the AI testing tool features. If you want to know list of available I support please type "list" or "functions" .
+    - text: Greeting. I am Chatbot Assistant power for the AI testing tool. My
+        primary tasks are provide user information and guide of the AI testing tool
+        features. If you want to know list of available I support please type "list" or "functions" .
 
   utter_did_that_help:
     - text: Did that help you?
@@ -97,8 +99,10 @@ responses:
   utter_Author:
     - text: Author
 
+
   utter_contact_admin:
     - text: You can find the contact information in the webpage
+      image: "./images/cute.jpg"
 
   utter_Create_input:
     - text: input file
@@ -118,11 +122,28 @@ responses:
   utter_graph_info:
     - text: sorry
   utter_create_graph:
-    - text: sorry
+    - text: You can create a new graph by go to
+        · Get Started
+
+        · Data Administration with graph
+
+        · Then create a new graph
+
   utter_create_new_graph:
-    - text: sorry
+    - text: You can create a new graph by go to
+        · Get Started
+
+        · Data Administration with graph
+        
+        · Then create a new graph
+
   utter_input_graph:
-    - text: sorry
+    - text: You can upload your graph by go to
+        · Get Started
+
+        · Data Administration
+        
+        · Then upload your graph
 
   utter_input_tree:
     - text: You can upload your JSON file in DATA ADMINISTRATION tab
