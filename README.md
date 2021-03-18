@@ -16,7 +16,7 @@
 `domain.yml` - the domain file, including bot response templates
 
 `config.yml` - training configurations for the NLU pipeline and policy ensemble
-## Installation
+## 👷‍ Installation
 
 ## Contributors
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
