@@ -169,11 +169,11 @@ responses:
   utter_execute_test_cases:
     - text: sorry
   
+  utter_test_branch:
+    - text: branch test branch
+
   utter_sharing_access:
     - text: Sorry, there is no immediate plan to add this feature but as a workaround, the team can have common login between the teammates.
-
-  utter_abcd:
-    - text: test branch
 
   utter_generate_test_cases:
     - text: sorry
