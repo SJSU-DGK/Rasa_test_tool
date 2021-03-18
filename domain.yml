@@ -176,7 +176,7 @@ responses:
     - text: sorry
 
   utter_test_branch:
-    - text: branch test test
+    - text: duy branch
     
 actions:
   - did_that_help
