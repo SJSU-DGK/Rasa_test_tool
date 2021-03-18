@@ -176,8 +176,7 @@ responses:
     - text: sorry
 
   utter_test_branch:
-    - text: branch test branch x2
-
+    - text: branch test test
 actions:
   - did_that_help
 forms: {}
