@@ -107,7 +107,7 @@ stories:
   - story: Execute_test_cases
     steps:
     - intent: Execute_test_cases
-    - action: utter_execute_test_cases
+    - action: utter_exacute_test_cases
 
   - story: Generate_test_cases
     steps:
