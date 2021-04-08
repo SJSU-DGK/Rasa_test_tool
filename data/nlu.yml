@@ -63,6 +63,7 @@ nlu:
       - false
       - nope
       - f
+      - not quite
 
   - intent: App_info
     examples: |
@@ -252,3 +253,38 @@ nlu:
       - What functions are supported by this tool?
       - what can this tool do?
       - what does this tool support?
+
+  - intent: portfolio
+    examples: |
+      - What is portfolio?
+      - what can I do with portfolio?
+      - portfolio
+      - what is my portfolio
+      - where can I see my portfolio
+      - where can I check my portfolio
+
+  - intent: test_case_group
+    examples: |
+      - what is test case group?
+      - where can I see test case group
+      - where can I check test case group
+      - what is test case group for
+      - what can I do with test case group
+
+  - intent: test_case_group_upload
+    examples: |
+      - how to upload in test case group
+      - show me ways to upload test case group
+      - how to upload my result
+
+  - intent: test_case_group_download
+    examples: |
+      - how to download in test case group
+      - show me ways to download test case group
+      - how to download my result
+
+  - intent: test_case_group_view
+    examples: |
+      - where can I view the result
+      - how to view result
+      - how to view test case group uploaded
