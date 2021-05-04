@@ -17,7 +17,6 @@ pipeline:
     constrain_similarities: true
   - name: FallbackClassifier
     threshold: 0.7
-    ambiguity_threshold: 0.1
 policies:
   - name: MemoizationPolicy
   - name: TEDPolicy
