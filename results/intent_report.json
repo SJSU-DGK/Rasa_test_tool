@@ -121,7 +121,7 @@
     "support": 5,
     "confused_with": {}
   },
-  "Exacute_test_cases": {
+  "execute_test_cases": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
