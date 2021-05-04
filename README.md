@@ -18,6 +18,9 @@
 `config.yml` - training configurations for the NLU pipeline and policy ensemble
 ## 👷‍ Installation
 
+To chat with the chatbot, use command
+`rasa shell`
+
 ## Contributors
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
