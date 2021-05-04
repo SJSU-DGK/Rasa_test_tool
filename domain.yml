@@ -82,15 +82,15 @@ responses:
   utter_feature_list:
     - text: |
         We support you to use these features:
-         - Graph
-         - Input file
-         - generate test cases
-         - execute test case group
+         · Graph
+         · Input file
+         · generate test cases
+         · execute test case group
   utter_information_list:
     - text: |
         These are information we would provide you:
-         - The author
-         - File type
+         · The author
+         · File type
   utter_did_that_help:
     - text: Did that help you?
   utter_goodbye:
@@ -101,20 +101,20 @@ responses:
     - text: edit creator info
   utter_create_account:
     - text: |
-        Here is how to create a new account
-        First create an account with “Register Here”
-        Then enter your user name and password
-        The hit "Register" to create a new account
+        · Here is how to create a new account
+        · First create an account with “Register Here”
+        · Then enter your user name and password
+        · The hit "Register" to create a new account
   utter_reset_password:
     - text: |-
         Unfortunately, we currently do not have this facility
         User will need to contact the admin
   utter_feel_good:
-    - text: good
+    - text: It's my pleasure helping you.
   utter_feel_bad:
-    - text: sorry
+    - text: How can we make it better?
   utter_Author:
-    - text: Author
+    - text: You can find the contact information in the webpage
   utter_contact_admin:
     - text: You can find the contact information in the webpage
   utter_Create_input:
@@ -176,6 +176,7 @@ responses:
 
   utter_generate_test_cases:
     - text: sorry
+    
   utter_please_rephrase:
     - text: I'm sorry, I didn't quite understand that. Could you rephrase?
 actions:
