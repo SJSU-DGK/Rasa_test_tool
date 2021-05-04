@@ -119,3 +119,45 @@ stories:
       - action: utter_did_that_help
       - intent: affirm
       - action: utter_feel_good
+
+# image functions stories
+
+  - story: image_input_info
+    steps:
+      - intent: image_input_info
+      - action:
+
+  - story: image_input_upload
+    steps:
+      - intent: image_input_upload
+      - action: 
+  
+  - story: image_input_download
+    steps:
+      - intent: image_input_download
+      - action: 
+  
+  - story: image_input_editing
+    steps:
+      - intent: image_input_editing
+      - action: 
+  
+  - story: image_input_addshape
+    steps: 
+      - intent: image_input_addshape
+      - action: 
+
+  - story: image_input_addtext
+    steps:
+      - intent: image_input_addtext
+      - action:
+  
+  - story: image_input_filter
+    steps:
+      - intent: image_input_filter
+      - action:
+
+  - story: image_input_changes
+    steps: 
+      - intent: image_input_changes
+      - action: 

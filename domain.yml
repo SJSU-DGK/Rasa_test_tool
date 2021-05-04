@@ -1,181 +1,205 @@
-version: "2.0"
+version: '2.0'
 config:
   store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-  - greet:
-      use_entities: true
-  - goodbye:
-      use_entities: true
-  - affirm:
-      use_entities: true
-  - deny:
-      use_entities: true
-  - Reset_password:
-      use_entities: true
-  - Creator_info:
-      use_entities: true
-  - Greate_input:
-      use_entities: true
-  - create_account:
-      use_entities: true
-  - Contact_admin:
-      use_entities: true
-  - Get_start:
-      use_entities: true
-  - data_file_info:
-      use_entities: true
-  - App_info:
-      use_entities: true
-  - Delete_node:
-      use_entities: true
-  - Graph_info:
-      use_entities: true
-  - Create_graph:
-      use_entities: true
-  - execute_test_cases:
-      use_entities: true
-  - Add_note:
-      use_entities: true
-  - Create_new_graph:
-      use_entities: true
-  - Generate_test_cases:
-      use_entities: true
-  - Modify_node:
-      use_entities: true
-  - Create_test_cases:
-      use_entities: true
-  - Input_graph:
-      use_entities: true
-  - Test_case_group_info:
-      use_entities: true
-  - Delete_multi_node:
-      use_entities: true
-  - Function_support:
-      use_entities: true
-  - reset_password:
-      use_entities: true
-  - function_support:
-      use_entities: true
-  - feature_list:
-      use_entities: true
-  - information_list:
-      use_entities: true
-  - nlu_fallback:
-      use_entities: true
-  - Create_input:
-      use_entities: true
-  - Execute_test_cases:
-      use_entities: true
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- Reset_password:
+    use_entities: true
+- Creator_info:
+    use_entities: true
+- Greate_input:
+    use_entities: true
+- create_account:
+    use_entities: true
+- Contact_admin:
+    use_entities: true
+- Get_start:
+    use_entities: true
+- data_file_info:
+    use_entities: true
+- App_info:
+    use_entities: true
+- Delete_node:
+    use_entities: true
+- Graph_info:
+    use_entities: true
+- Create_graph:
+    use_entities: true
+- execute_test_cases:
+    use_entities: true
+- Add_note:
+    use_entities: true
+- Create_new_graph:
+    use_entities: true
+- Generate_test_cases:
+    use_entities: true
+- Modify_node:
+    use_entities: true
+- Create_test_cases:
+    use_entities: true
+- Input_graph:
+    use_entities: true
+- Test_case_group_info:
+    use_entities: true
+- Delete_multi_node:
+    use_entities: true
+- Function_support:
+    use_entities: true
+- reset_password:
+    use_entities: true
+- function_support:
+    use_entities: true
+- feature_list:
+    use_entities: true
+- information_list:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- Create_input:
+    use_entities: true
+- Execute_test_cases:
+    use_entities: true
+- image_input_filter:
+    use_entities: true
+- test_case_group_upload:
+    use_entities: true
+- image_input_download:
+    use_entities: true
+- test_case_group:
+    use_entities: true
+- image_input_changes:
+    use_entities: true
+- image_input_editing:
+    use_entities: true
+- portfolio:
+    use_entities: true
+- image_input_upload:
+    use_entities: true
+- test_case_group_download:
+    use_entities: true
+- image_input_info:
+    use_entities: true
+- image_input_addshape:
+    use_entities: true
+- test_case_group_view:
+    use_entities: true
+- image_input_addtext:
+    use_entities: true
 entities: []
 slots: {}
 responses:
   utter_greet:
-    - buttons:
-        - payload: Feature list
-          title: Feature list
-        - payload: Information list
-          title: Information list
-      text: Greeting. I am Chatbot Assistant power for the AI testing tool. My primary tasks are provide user information and guidace of the AI testing tool features. Here are some suggestion to explore our app.
+  - buttons:
+    - payload: Feature list
+      title: Feature list
+    - payload: Information list
+      title: Information list
+    text: Greeting. I am Chatbot Assistant power for the AI testing tool. My primary tasks are provide user information and guidace of the AI testing tool features. Here are some suggestion to explore our app.
   utter_feature_list:
-    - text: |
-        We support you to use these features:
-         - Graph
-         - Input file
-         - generate test cases
-         - execute test case group
+  - text: |
+      We support you to use these features:
+       - Graph
+       - Input file
+       - generate test cases
+       - execute test case group
   utter_information_list:
-    - text: |
-        These are information we would provide you:
-         - The author
-         - File type
+  - text: |
+      These are information we would provide you:
+       - The author
+       - File type
   utter_did_that_help:
-    - text: Did that help you?
+  - text: Did that help you?
   utter_goodbye:
-    - text: It's my pleasure helping you. You are always welcome.
+  - text: It's my pleasure helping you. You are always welcome.
   utter_App_info:
-    - text: edit app  info
+  - text: edit app  info
   utter_Creator_info:
-    - text: edit creator info
+  - text: edit creator info
   utter_create_account:
-    - text: |
-        Here is how to create a new account
-        First create an account with “Register Here”
-        Then enter your user name and password
-        The hit "Register" to create a new account
+  - text: |
+      Here is how to create a new account
+      First create an account with “Register Here”
+      Then enter your user name and password
+      The hit "Register" to create a new account
   utter_reset_password:
-    - text: |-
-        Unfortunately, we currently do not have this facility
-        User will need to contact the admin
+  - text: |-
+      Unfortunately, we currently do not have this facility
+      User will need to contact the admin
   utter_feel_good:
-    - text: good
+  - text: good
   utter_feel_bad:
-    - text: sorry
+  - text: sorry
   utter_Author:
-    - text: Author
+  - text: Author
   utter_contact_admin:
-    - text: You can find the contact information in the webpage
+  - text: You can find the contact information in the webpage
   utter_Create_input:
-    - text: input file from
+  - text: input file from
   utter_data_file_info:
-    - text: file extend. data file support?
+  - text: file extend. data file support?
   utter_function_support:
-    - text: |-
-        Our application are currently support is
-        Input and context tree modeling,
-        Test case modeling,
-        Test case input modeling
+  - text: |-
+      Our application are currently support is
+      Input and context tree modeling,
+      Test case modeling,
+      Test case input modeling
   utter_graph_info:
-    - text: sorry
+  - text: sorry
   utter_create_graph:
-    - text: |-
-        You can create a new graph by go to · Get Started
-        · Data Administration with graph
-        · Then create a new graph
+  - text: |-
+      You can create a new graph by go to · Get Started
+      · Data Administration with graph
+      · Then create a new graph
   utter_create_new_graph:
-    - text: |-
-        You can create a new graph by go to · Get Started
-        · Data Administration with graph
-        · Then create a new graph
+  - text: |-
+      You can create a new graph by go to · Get Started
+      · Data Administration with graph
+      · Then create a new graph
   utter_input_graph:
-    - text: |-
-        You can upload your graph by go to · Get Started
-        · Data Administration
-        · Then upload your graph
+  - text: |-
+      You can upload your graph by go to · Get Started
+      · Data Administration
+      · Then upload your graph
   utter_input_tree:
-    - text: You can upload your JSON file in DATA ADMINISTRATION tab OR you can create the tree manually in DATA ADMINISTRATION WITH GRAPH tab under GET STARTED
+  - text: You can upload your JSON file in DATA ADMINISTRATION tab OR you can create the tree manually in DATA ADMINISTRATION WITH GRAPH tab under GET STARTED
   utter_add_note:
-    - text: sorry
+  - text: sorry
   utter_delete_node:
-    - text: |-
-        Go Navigation Login → Get Started → DATA ADMINISTRATION WITH GRAPH
-        Select your tree, Move mouse over the node
-        Right click on it and an option to delete the node will be displayed.
+  - text: |-
+      Go Navigation Login → Get Started → DATA ADMINISTRATION WITH GRAPH
+      Select your tree, Move mouse over the node
+      Right click on it and an option to delete the node will be displayed.
   utter_delete_multi_node:
-    - text: Sorry, you have to delete nodes one by one.
+  - text: Sorry, you have to delete nodes one by one.
   utter_modify_node:
-    - text: |-
-        Go Navigation
-        Login → Get Started → DATA ADMINISTRATION WITH GRAPH
-        Select your tree, Move mouse over the node
-        Right click on it and an option to modify the node will be displayed.
+  - text: |-
+      Go Navigation
+      Login → Get Started → DATA ADMINISTRATION WITH GRAPH
+      Select your tree, Move mouse over the node
+      Right click on it and an option to modify the node will be displayed.
   utter_test_case_group_info:
-    - text: |-
-        AI testing tools provide users with a tool to help manage data in the form of data tree.
-        Users can freely interact and edit their data by adding, deleting, and moving data nodes to suit their purpose.
+  - text: |-
+      AI testing tools provide users with a tool to help manage data in the form of data tree.
+      Users can freely interact and edit their data by adding, deleting, and moving data nodes to suit their purpose.
   utter_create_test_cases:
-    - text: We provide two possible options in creating graph which are make a new graph from scratch and draw it from the imported data file.
-
+  - text: We provide two possible options in creating graph which are make a new graph from scratch and draw it from the imported data file.
   utter_execute_test_cases:
-    - text: sorry
-
+  - text: sorry
   utter_generate_test_cases:
-    - text: sorry
+  - text: sorry
   utter_please_rephrase:
-    - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
 actions:
-  - did_that_help
+- did_that_help
 forms: {}
 e2e_actions: []
