@@ -288,3 +288,80 @@ nlu:
       - where can I view the result
       - how to view result
       - how to view test case group uploaded
+
+  - intent: image_input_info
+    examples: |
+      - what is image input modulation
+      - what can I do with image input modulation
+      - how to use image input modulation
+      - image input modulation
+      - image input
+      - tell me about image input modulation
+      - how to input image
+      - how to image input
+
+  - intent: image_input_upload
+    examples: |
+      - how to upload image
+      - how to upload image for editing
+      - upload image
+      - image upload
+      - image input upload
+
+  - intent: image_input_download
+    examples: |
+      - how to download image
+      - how to download image for editing
+      - download image
+      - image download
+      - export image
+      - how to export image
+
+  - intent: image_input_editing
+    examples: |
+      - how to edit image
+      - how to start editing image
+      - edit image
+      - image editing
+      - ways to start editing
+      - what can I do with the image
+      - which features does image modulation provide
+      - which effects can I do with image editing
+
+  - intent: image_input_addshape
+    examples: |
+      - how to add shapes
+      - how to draw
+      - draw on image
+      - image add shape
+      - add shape on image
+      - can i add shape on image
+      - can I draw more shape on image
+
+  - intent: image_input_addtext
+    examples: |
+      - how to add text
+      - how to write on image
+      - write text on image
+      - image add text
+
+  - intent: image_input_filter
+    examples: |
+      - how to add filter
+      - how to add filter on image
+      - apply filter on image
+      - ways to add filter
+      - filter for image
+      - which filter can I apply on image
+
+  - intent: image_input_changes
+    examples: |
+      - how to undo changes
+      - undo changes
+      - next changes
+      - changes history
+      - image changes
+      - how to go back and forth image changes
+      - how to go back and forth changes history
+      - undo changes history
+
