@@ -236,7 +236,7 @@ nlu:
     examples: |
       - ways to execute test case
       - Execute test case
-      - How to exacuter test case
+      - How to executer test case
       - steps to execute test case
 
   - intent: Generate_test_cases
