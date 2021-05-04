@@ -1,270 +1,366 @@
 version: "2.0"
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - hi there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - goodmorning
-    - goodevening
-    - good afternoon
-    - wassup
-    - hello!
-    - hey!
-- intent: goodbye
-  examples: |
-    - good afternoon
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - night
-    - have a nice day
-    - have a good day
-    - have a good day!
-    - see you around
-    - bye bye
-    - see you later
-    - see ya!
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-    - right
-    - true
-    - yah
-    - yeah
-    - exactly
-    - ya
-    - t
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-    - false
-    - nope
-    - f
-    - not quite
-- intent: feature_list
-  examples: |
-    - feature list
-    - function list
-    - support functions of this app
-- intent: information_list
-  examples: |
-    - information list
-    - Information list
-    - support information for this app
-- intent: App_info
-  examples: |
-    - what is AL testing Tool?
-    - What does Al testing Tool do?
-    - what does this app do?
-    - app information
-    - app info
-    - what is this for?
-    - Can you tell me about the app?
-    - tell me about the app
-- intent: Creator_info
-  examples: |
-    - Who create the AI testing tool?
-    - Who is the creator?
-    - who is the Author?
-    - who created this tool?
-    - who created this app?
-- intent: create_account
-  examples: |
-    - Show me how to create user?
-    - Show me how to create account?
-    - create user account
-    - create account
-    - create user
-    - how to create account
-    - how to create user
-    - steps to create account
-    - steps to create user
-- intent: Reset_password
-  examples: |
-    - How can I reset my password ?
-    - How to reset password ?
-    - reset password
-    - Ways to reset password
-    - Show me how to reset password
-    - How to get my password back
-    - steps to reset password
-    - how to reset account
-- intent: Contact_admin
-  examples: |
-    - How can I contact the admin?
-    - How to cantact admin?
-    - Contact admin?
-    - How to send feedback?
-    - How to submit Ticket?
-    - submit a ticket?
-    - ways to contact
-    - how to contact
-- intent: Get_start
-  examples: |
-    - Show me how to start?
-    - What is the first step?
-    - How to start?
-    - how to get started?
-    - what should I do first?
-    - what to do first
-- intent: Create_input
-  examples: |
-    - input file
-    - how to upload file data
-    - How to upload Json file
-    - upload data file
-    - upload file
-- intent: data_file_info
-  examples: |
-    - data file
-    - what is data file that the app support
-    - data file support
-    - file support
-    - what does data type support
-    - data file information
-    - tell me about data file
-    - i want to know about data file
-- intent: Graph_info
-  examples: |
-    - What does the  graph function do?
-    - What is the Data administration with graph?
-    - What does the Data administration with graph do?
-    - Graph
-    - Data administration with graph
-- intent: Create_graph
-  examples: |
-    - How can I create a graph?
-    - How can I start using the graph tool?
-    - create graph
-    - input graph
-    - draw graph
-    - how to create a graph
-- intent: Create_new_graph
-  examples: |
-    - create new graph
-    - How to create new graph
-    - show me how to create new graph
-- intent: Input_graph
-  examples: |
-    - input graph
-    - How to create graph from the input data
-    - create graph from input file
-- intent: Add_note
-  examples: |
-    - Could you show me how to add node?
-    - add note
-    - add new node
-    - How to add node to graph?
-    - how to add node
-    - steps to add node
-    - ways to add node
-- intent: Delete_node
-  examples: |
-    - Show me how to delete node
-    - delete node
-    - how to delete node
-    - steps to delete node
-    - ways to delete node
-- intent: Delete_multi_node
-  examples: |
-    - Can I delete multiple nodes?
-    - Can I delete multiple nodes at a time?
-    - Can I delete multiple nodes at the same time?
-    - can I delete a group of nodes?
-    - how to delete multiple nodes
-    - how to delete many nodes at the same time
-    - delete multiple nodes
-    - delete many nodes
-- intent: Modify_node
-  examples: |
-    - can I change the graph
-    - can I change order of the graph
-    - how can I modify node
-    - how to modify node
-    - steps to modify node
-    - ways to modify node
-    - Modify node
-- intent: Test_case_group_info
-  examples: |
-    - What is Test cases group
-    - Test cases group
-    - test cases group information
-    - tell me about test cases group
-    - show me test cases group
-- intent: Create_test_cases
-  examples: |
-    - How to create test cases
-    - create test case group
-    - Show me create test cases steps
-    - show me how to create test cases
-    - steps to create test cases
-    - ways to create test cases
-- intent: Execute_test_cases
-  examples: |
-    - ways to execute test case
-    - Execute test case
-    - How to exacuter test case
-    - steps to execute test case
-- intent: Generate_test_cases
-  examples: |
-    - Generate test case
-    - ways to generate test cases
-    - steps to generate test cases
-    - how to generate test cases?
-    - how to generate test cases
-    - show me how to generate test cases
-- intent: Function_support
-  examples: |
-    - What functions are supported by this tool?
-    - what can this tool do?
-    - what does this tool support?
-- intent: portfolio
-  examples: |
-    - What is portfolio?
-    - what can I do with portfolio?
-    - portfolio
-    - what is my portfolio
-    - where can I see my portfolio
-    - where can I check my portfolio
-- intent: test_case_group
-  examples: |
-    - what is test case group?
-    - where can I see test case group
-    - where can I check test case group
-    - what is test case group for
-    - what can I do with test case group
-- intent: test_case_group_upload
-  examples: |
-    - how to upload in test case group
-    - show me ways to upload test case group
-    - how to upload my result
-- intent: test_case_group_download
-  examples: |
-    - how to download in test case group
-    - show me ways to download test case group
-    - how to download my result
-- intent: test_case_group_view
-  examples: |
-    - where can I view the result
-    - how to view result
-    - how to view test case group uploaded
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - hi there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - goodmorning
+      - goodevening
+      - good afternoon
+      - wassup
+      - hello!
+      - hey!
+
+  - intent: goodbye
+    examples: |
+      - good afternoon
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - night
+      - have a nice day
+      - have a good day
+      - have a good day!
+      - see you around
+      - bye bye
+      - see you later
+      - see ya!
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - right
+      - true
+      - yah
+      - yeah
+      - exactly
+      - ya
+      - t
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+      - false
+      - nope
+      - f
+      - not quite
+
+  - intent: App_info
+    examples: |
+      - what is AL testing Tool?
+      - What does Al testing Tool do?
+      - what does this app do?
+      - app information
+      - app info
+      - what is this for?
+      - Can you tell me about the app?
+      - tell me about the app
+
+  - intent: Creator_info
+    examples: |
+      - Who create the AI testing tool?
+      - Who is the creator?
+      - who is the Author?
+      - who created this tool?
+      - who created this app?
+
+  - intent: create_account
+    examples: |
+      - Show me how to create user?
+      - Show me how to create account?
+      - create user account
+      - create account
+      - create user
+      - how to create account
+      - how to create user
+      - steps to create account
+      - steps to create user
+
+  - intent: Reset_password
+    examples: |
+      - How can I reset my password ?
+      - How to reset password ?
+      - reset password
+      - Ways to reset password
+      - Show me how to reset password
+      - How to get my password back
+      - steps to reset password
+      - how to reset account
+
+  - intent: Contact_admin
+    examples: |
+      - How can I contact the admin?
+      - How to cantact admin?
+      - Contact admin?
+      - How to send feedback?
+      - How to submit Ticket?
+      - submit a ticket?
+      - ways to contact
+      - how to contact
+
+  - intent: Get_start
+    examples: |
+      - Show me how to start?
+      - What is the first step?
+      - How to start?
+      - how to get started?
+      - what should I do first?
+      - what to do first
+
+  - intent: Create_input
+    examples: |
+      - input file
+      - how to upload file data
+      - How to upload Json file
+      - upload data file
+      - upload file
+
+  - intent: data_file_info
+    examples: |
+      - data file
+      - what is data file that the app support
+      - data file support
+      - file support
+      - what does data type support
+      - data file information
+      - tell me about data file
+      - i want to know about data file
+
+  - intent: Graph_info
+    examples: |
+      - What does the  graph function do?
+      - What is the Data administration with graph?
+      - What does the Data administration with graph do?
+      - Graph
+      - Data administration with graph
+
+  - intent: Create_graph
+    examples: |
+      - How can I create a graph?
+      - How can I start using the graph tool?
+      - create graph
+      - input graph
+      - draw graph
+      - how to create a graph
+
+  - intent: Create_new_graph
+    examples: |
+      - create new graph
+      - How to create new graph
+      - show me how to create new graph
+
+  - intent: Input_graph
+    examples: |
+      - input graph
+      - How to create graph from the input data
+      - create graph from input file
+
+  - intent: Add_note
+    examples: |
+      - Could you show me how to add node?
+      - add note
+      - add new node
+      - How to add node to graph?
+      - how to add node
+      - steps to add node
+      - ways to add node
+
+  - intent: Delete_node
+    examples: |
+      - Show me how to delete node
+      - delete node
+      - how to delete node
+      - how to delete node
+      - steps to delete node
+      - ways to delete node
+
+  - intent: Delete_multi_node
+    examples: |
+      - Can I delete multiple nodes?
+      - Can I delete multiple nodes at a time?
+      - Can I delete multiple nodes at the same time?
+      - can I delete a group of nodes?
+      - how to delete multiple nodes
+      - how to delete many nodes at the same time
+      - delete multiple nodes
+      - delete many nodes
+
+  - intent: Modify_node
+    examples: |
+      - can I change the graph
+      - can I change order of the graph
+      - how can I modify node
+      - how to modify node
+      - steps to modify node
+      - ways to modify node
+      - Modify node
+
+  - intent: Test_case_group_info
+    examples: |
+      - What is Test cases group
+      - Test cases group
+      - test cases group information
+      - tell me about test cases group
+      - show me test cases group
+
+  - intent: Create_test_cases
+    examples: |
+      - How to create test cases
+      - create test case group
+      - Show me create test cases steps
+      - show me how to create test cases
+      - steps to create test cases
+      - ways to create test cases
+
+  - intent: Execute_test_cases
+    examples: |
+      - ways to execute test case
+      - Execute test case
+      - How to exacuter test case
+      - steps to execute test case
+
+  - intent: Generate_test_cases
+    examples: |
+      - Generate test case
+      - ways to generate test cases
+      - steps to generate test cases
+      - how to generate test cases?
+      - how to generate test cases
+      - show me how to generate test cases
+
+  - intent: Function_support
+    examples: |
+      - What functions are supported by this tool?
+      - what can this tool do?
+      - what does this tool support?
+
+  - intent: portfolio
+    examples: |
+      - What is portfolio?
+      - what can I do with portfolio?
+      - portfolio
+      - what is my portfolio
+      - where can I see my portfolio
+      - where can I check my portfolio
+
+  - intent: test_case_group
+    examples: |
+      - what is test case group?
+      - where can I see test case group
+      - where can I check test case group
+      - what is test case group for
+      - what can I do with test case group
+
+  - intent: test_case_group_upload
+    examples: |
+      - how to upload in test case group
+      - show me ways to upload test case group
+      - how to upload my result
+
+  - intent: test_case_group_download
+    examples: |
+      - how to download in test case group
+      - show me ways to download test case group
+      - how to download my result
+
+  - intent: test_case_group_view
+    examples: |
+      - where can I view the result
+      - how to view result
+      - how to view test case group uploaded
+
+  - intent: image_input_info
+    examples: |
+      - what is image input modulation
+      - what can I do with image input modulation
+      - how to use image input modulation
+      - image input modulation
+      - image input
+      - tell me about image input modulation
+      - how to input image
+      - how to image input
+
+  - intent: image_input_upload
+    examples: |
+      - how to upload image
+      - how to upload image for editing
+      - upload image
+      - image upload
+      - image input upload
+
+  - intent: image_input_download
+    examples: |
+      - how to download image
+      - how to download image for editing
+      - download image
+      - image download
+      - export image
+      - how to export image
+
+  - intent: image_input_editing
+    examples: |
+      - how to edit image
+      - how to start editing image
+      - edit image
+      - image editing
+      - ways to start editing
+      - what can I do with the image
+      - which features does image modulation provide
+      - which effects can I do with image editing
+
+  - intent: image_input_addshape
+    examples: |
+      - how to add shapes
+      - how to draw
+      - draw on image
+      - image add shape
+      - add shape on image
+      - can i add shape on image
+      - can I draw more shape on image
+
+  - intent: image_input_addtext
+    examples: |
+      - how to add text
+      - how to write on image
+      - write text on image
+      - image add text
+
+  - intent: image_input_filter
+    examples: |
+      - how to add filter
+      - how to add filter on image
+      - apply filter on image
+      - ways to add filter
+      - filter for image
+      - which filter can I apply on image
+
+  - intent: image_input_changes
+    examples: |
+      - how to undo changes
+      - undo changes
+      - next changes
+      - changes history
+      - image changes
+      - how to go back and forth image changes
+      - how to go back and forth changes history
+      - undo changes history
