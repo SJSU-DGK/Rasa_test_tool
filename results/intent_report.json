@@ -114,7 +114,7 @@
     "support": 10,
     "confused_with": {}
   },
-  "Greate_input": {
+  "Greet_input": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
