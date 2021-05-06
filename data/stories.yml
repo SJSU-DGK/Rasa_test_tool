@@ -1,163 +1,142 @@
 version: "2.0"
 stories:
-  - story: Greeting_featurelist
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: feature_list
-      - action: utter_feature_list
+- story: Greeting_featurelist
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: feature_list
+  - action: utter_feature_list
+- story: Greeting_informationlist
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: information_list
+  - action: utter_information_list
+- story: App_information
+  steps:
+  - intent: App_info
+  - action: utter_App_info
+- story: Creator_info
+  steps:
+  - intent: Creator_info
+  - action: utter_Creator_info
+- story: Create account
+  steps:
+  - intent: create_account
+  - action: utter_create_account
+- story: Reset password
+  steps:
+  - intent: reset_password
+  - action: utter_reset_password
+- story: Contact admin
+  steps:
+  - intent: Contact_admin
+  - action: utter_contact_admin
+- story: Create_input
+  steps:
+  - intent: Create_input
+  - action: utter_Create_input
+- story: data_file_info
+  steps:
+  - intent: data_file_info
+  - action: utter_data_file_info
+- story: Graph_info
+  steps:
+  - intent: Graph_info
+  - action: utter_graph_info
+- story: Create_graph
+  steps:
+  - intent: Create_graph
+  - action: utter_create_graph
+- story: Create_new_graph
+  steps:
+  - intent: Create_new_graph
+  - action: utter_create_new_graph
+- story: Input_graph
+  steps:
+  - intent: Input_graph
+  - action: utter_input_graph
+- story: Add_note
+  steps:
+  - intent: Add_note
+  - action: utter_add_note
 
-  - story: Greeting_informationlist
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: information_list
-      - action: utter_information_list
+- story: Test Case Group Info
+  steps:
+  - intent: Test_case_group_info
+  - action: utter_test_case_group_info
+- story: Modify Node
+  steps:
+  - intent: Modify_node
+  - action: utter_modify_node
+- story: Create Test Case
+  steps:
+  - intent: Create_test_cases
+  - action: utter_create_test_cases
+- story: Delete Node
+  steps:
+  - intent: Delete_node
+  - action: utter_delete_node
+- story: Delete Multi Node
+  steps:
+  - intent: Delete_multi_node
+  - action: utter_delete_multi_node
+- story: Execute_test_cases
+  steps:
+  - intent: Execute_test_cases
+  - action: utter_execute_test_cases
+- story: Generate_test_cases
+  steps:
+  - intent: Generate_test_cases
+  - action: utter_generate_test_cases
+- story: did_that_help_affirm
+  steps:
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_feel_good
 
-  - story: App_information
-    steps:
-      - intent: App_info
-      - action: utter_App_info
+- story: portfolio
+  steps:
+  - intent: portfolio
+  - action: utter_portfolio
 
-  - story: Creator_info
-    steps:
-      - intent: Creator_info
-      - action: utter_Creator_info
+- story: image_input_info
+  steps:
+  - intent: image_input_info
+  - action: utter_imageInputInfo
 
-  - story: Create account
-    steps:
-      - intent: create_account
-      - action: utter_create_account
-
-  - story: Reset password
-    steps:
-      - intent: reset_password
-      - action: utter_reset_password
-
-  - story: Contact admin
-    steps:
-      - intent: Contact_admin
-      - action: utter_contact_admin
-
-  - story: Create_input
-    steps:
-      - intent: Create_input
-      - action: utter_Create_input
-
-  - story: data_file_info
-    steps:
-      - intent: data_file_info
-      - action: utter_data_file_info
-
-  - story: Graph_info
-    steps:
-      - intent: Graph_info
-      - action: utter_graph_info
-
-  - story: Create_graph
-    steps:
-      - intent: Create_graph
-      - action: utter_create_graph
-
-  - story: Create_new_graph
-    steps:
-      - intent: Create_new_graph
-      - action: utter_create_new_graph
-
-  - story: Input_graph
-    steps:
-      - intent: Input_graph
-      - action: utter_input_graph
-
-  - story: Add_note
-    steps:
-      - intent: Add_note
-      - action: utter_add_note
-
-  - story: Function Support
-    steps:
-      - intent: function_support
-      - action: utter_function_support
-
-  - story: Test Case Group Info
-    steps:
-      - intent: Test_case_group_info
-      - action: utter_test_case_group_info
-
-  - story: Modify Node
-    steps:
-      - intent: Modify_node
-      - action: utter_modify_node
-
-  - story: Create Test Case
-    steps:
-      - intent: Create_test_cases
-      - action: utter_create_test_cases
-
-  - story: Delete Node
-    steps:
-      - intent: Delete_node
-      - action: utter_delete_node
-
-  - story: Delete Multi Node
-    steps:
-      - intent: Delete_multi_node
-      - action: utter_delete_multi_node
-
-  - story: Execute_test_cases
-    steps:
-      - intent: Execute_test_cases
-      - action: utter_execute_test_cases
-
-  - story: Generate_test_cases
-    steps:
-      - intent: Generate_test_cases
-      - action: utter_generate_test_cases
-
-  - story: did_that_help_affirm
-    steps:
-      - action: utter_did_that_help
-      - intent: affirm
-      - action: utter_feel_good
-
-# image functions stories
-
-  - story: image_input_info
-    steps:
-      - intent: image_input_info
-      - action:
-
-  - story: image_input_upload
-    steps:
-      - intent: image_input_upload
-      - action: 
+- story: image_input_upload
+  steps:
+  - intent: image_input_upload
+  - action: utter_imageInputUpload
   
-  - story: image_input_download
-    steps:
-      - intent: image_input_download
-      - action: 
+- story: image_input_download
+  steps: 
+  - intent: image_input_download
+  - action: utter_imageInputDownload
   
-  - story: image_input_editing
-    steps:
-      - intent: image_input_editing
-      - action: 
+- story: image_input_editing
+  steps:
+  - intent: image_input_editing
+  - action: utter_imageInputEditing
   
-  - story: image_input_addshape
-    steps: 
-      - intent: image_input_addshape
-      - action: 
+- story: image_input_addshape
+  steps: 
+  - intent: image_input_addshape
+  - action: utter_imageInputAddshape
 
-  - story: image_input_addtext
-    steps:
-      - intent: image_input_addtext
-      - action:
+- story: image_input_addtext
+  steps:
+  - intent: image_input_addtext
+  - action: utter_imageInputAddtext
   
-  - story: image_input_filter
-    steps:
-      - intent: image_input_filter
-      - action:
+- story: image_input_filter
+  steps:
+  - intent: image_input_filter
+  - action: utter_imageInputFilter
 
-  - story: image_input_changes
-    steps: 
-      - intent: image_input_changes
-      - action: 
+- story: image_input_changes
+  steps: 
+  - intent: image_input_changes
+  - action: utter_imageInputChanges
+ 
