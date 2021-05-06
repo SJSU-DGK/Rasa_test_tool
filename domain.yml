@@ -80,12 +80,21 @@ responses:
           title: Information list
       text: Greeting. I am Chatbot Assistant power for the AI testing tool. My primary tasks are provide user information and guidace of the AI testing tool features. Here are some suggestion to explore our app.
   utter_feature_list:
+<<<<<<< Updated upstream
     - text: |
         We support you to use these features:
          - Graph
          - Input file
          - generate test cases
          - execute test case group
+=======
+  - text: |
+      Our application are currently support is:
+       · Input and context tree modeling
+       · Input file
+       · Test case modeling,
+       · execute test case group
+>>>>>>> Stashed changes
   utter_information_list:
     - text: |
         These are information we would provide you:
@@ -96,7 +105,11 @@ responses:
   utter_goodbye:
     - text: It's my pleasure helping you. You are always welcome.
   utter_App_info:
+<<<<<<< Updated upstream
     - text: edit app  info
+=======
+  - text: AI test tool is an application that assists programmers to analyze and create possible test cases based on user-provided database. The app also provides features that allow users to manage and edit the database to suit their purpose.
+>>>>>>> Stashed changes
   utter_Creator_info:
     - text: edit creator info
   utter_create_account:
@@ -120,6 +133,7 @@ responses:
   utter_Create_input:
     - text: input file from
   utter_data_file_info:
+<<<<<<< Updated upstream
     - text: file extend. data file support?
   utter_function_support:
     - text: |-
@@ -134,6 +148,29 @@ responses:
         You can create a new graph by go to · Get Started
         · Data Administration with graph
         · Then create a new graph
+=======
+  - text: We mainly support data files in JSON format. You can refer in https://www.tutorialspoint.com/json/json_quick_guide.htm
+  utter_graph_info:
+  - text: |-
+      The graphical feature of the AI testing tool is a feature that allows users to
+      manage, interact, and modify the structure of the database in form of
+      diagrams. Some of the capabilities of the graphics feature include:
+      - generate a graphical database from an imported file.
+      - Reposition the data node to refactor the graphic data as desired.
+      - Adding and deleteding data nodes.
+      - Export completed graph database.
+  utter_create_graph:
+  - buttons:
+    - payload: Input_graph
+      title: Auto
+    - payload: Add new node
+      title: Manual
+    text: |-
+      We provie two option in creating graph:
+      · Create automatically a graph by inputed datafile.
+      · Create manually by adding data nodes.
+      Pick the option you want to explore
+>>>>>>> Stashed changes
   utter_create_new_graph:
     - text: |-
         You can create a new graph by go to · Get Started
@@ -174,7 +211,29 @@ responses:
   utter_generate_test_cases:
     - text: sorry
   utter_please_rephrase:
+<<<<<<< Updated upstream
     - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+=======
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  utter_portfolio:
+  - text: sd
+  utter_imageInputInfo:
+  - text: sd
+  utter_imageInputUpload:
+  - text: sd
+  utter_imageInputDownload:
+  - text: sd
+  utter_imageInputEditing:
+  - text: sd
+  utter_imageInputAddshape:
+  - text: sd
+  utter_imageInputAddtext:
+  - text: sd
+  utter_imageInputFilter:
+  - text: sd
+  utter_imageInputChanges:
+  - text: sd
+>>>>>>> Stashed changes
 actions:
   - did_that_help
 forms: {}
