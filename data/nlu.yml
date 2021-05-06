@@ -166,6 +166,7 @@ nlu:
     - How can I make a graph
     - how to user graph feature
     - tell me how to make a graph
+    - creating context input tree
 - intent: Create_new_graph
   examples: |
     - create new graph
@@ -219,6 +220,9 @@ nlu:
     - test cases group information
     - tell me about test cases group
     - show me test cases group
+    - Show tes case grou
+    - test case
+    - test case group
 - intent: Create_test_cases
   examples: |
     - How to create test cases
@@ -227,6 +231,8 @@ nlu:
     - show me how to create test cases
     - steps to create test cases
     - ways to create test cases
+    - how test case group work?
+    - how to start test case group?
 - intent: Execute_test_cases
   examples: |
     - ways to execute test case
