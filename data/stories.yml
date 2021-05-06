@@ -139,4 +139,4 @@ stories:
   steps: 
   - intent: image_input_changes
   - action: utter_imageInputChanges
-  
+ 

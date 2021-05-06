@@ -66,6 +66,14 @@ nlu:
       - f
       - not quite
 
+  - intent: feature_list
+    examples: |
+      - feature list
+  - intent: information_list
+    examples: |
+      - information list
+      - Information list
+
   - intent: App_info
     examples: |
       - what is AL testing Tool?
