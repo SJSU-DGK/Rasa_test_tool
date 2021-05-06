@@ -47,9 +47,21 @@ For detail installation, please refer to Rasa Installation at this [link](https:
     <td align="center"><a href="https://github.com/khamtran411"><img src="https://avatars.githubusercontent.com/khamtran411?v=3?s=100" width="100px;" alt=""/><br /><sub><b>Kham Tran</b></sub></a><br /></td>
   </tr>
 </table>
-
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
 ## Credits
 This bot is created based on the [Rasa Open Source](https://github.com/RasaHQ/rasa)
