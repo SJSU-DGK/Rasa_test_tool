@@ -1,5 +1,6 @@
 # AI Test Tool Chatbot
 ## Features
+- This is a chatbot to support [AI Test Tool](http://3dmodeler.us-east-2.elasticbeanstalk.com/)
 - Understanding the AI Test Tool
 - Getting started with AI Test Tool
 - Answering some FAQs around AI Test Tool
@@ -16,10 +17,24 @@
 `domain.yml` - the domain file, including bot response templates
 
 `config.yml` - training configurations for the NLU pipeline and policy ensemble
+
 ## 👷‍ Installation
 
+Install
+```
+pip3 install -U pip
+pip3 install rasa
+```
+
 To chat with the chatbot, use command
-`rasa shell`
+```
+rasa shell
+```
+
+For detail installation, please refer to Rasa Installation at this [link](https://rasa.com/docs/rasa/installation/)
+ * [Windows Guide](https://www.youtube.com/watch?v=GlR60CvTh8A)
+ * [MacOS Guide](https://www.youtube.com/watch?v=fqzsE70Rvr0)
+ * [Ubuntu Guide](https://www.youtube.com/watch?v=tXiYJM2vGJk)
 
 ## Contributors
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
