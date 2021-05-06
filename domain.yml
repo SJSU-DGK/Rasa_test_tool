@@ -5,70 +5,96 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-  - greet:
-      use_entities: true
-  - goodbye:
-      use_entities: true
-  - affirm:
-      use_entities: true
-  - deny:
-      use_entities: true
-  - Reset_password:
-      use_entities: true
-  - Creator_info:
-      use_entities: true
-  - Greet_input:
-      use_entities: true
-  - create_account:
-      use_entities: true
-  - Contact_admin:
-      use_entities: true
-  - Get_start:
-      use_entities: true
-  - data_file_info:
-      use_entities: true
-  - App_info:
-      use_entities: true
-  - Delete_node:
-      use_entities: true
-  - Graph_info:
-      use_entities: true
-  - Create_graph:
-      use_entities: true
-  - execute_test_cases:
-      use_entities: true
-  - Add_note:
-      use_entities: true
-  - Create_new_graph:
-      use_entities: true
-  - Generate_test_cases:
-      use_entities: true
-  - Modify_node:
-      use_entities: true
-  - Create_test_cases:
-      use_entities: true
-  - Input_graph:
-      use_entities: true
-  - Test_case_group_info:
-      use_entities: true
-  - Delete_multi_node:
-      use_entities: true
-  - Function_support:
-      use_entities: true
-  - reset_password:
-      use_entities: true
-  - function_support:
-      use_entities: true
-  - feature_list:
-      use_entities: true
-  - information_list:
-      use_entities: true
-  - nlu_fallback:
-      use_entities: true
-  - Create_input:
-      use_entities: true
-  - Execute_test_cases:
-      use_entities: true
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- Reset_password:
+    use_entities: true
+- Creator_info:
+    use_entities: true
+- Greet_input:
+    use_entities: true
+- create_account:
+    use_entities: true
+- Contact_admin:
+    use_entities: true
+- Get_start:
+    use_entities: true
+- data_file_info:
+    use_entities: true
+- App_info:
+    use_entities: true
+- Delete_node:
+    use_entities: true
+- Graph_info:
+    use_entities: true
+- Create_graph:
+    use_entities: true
+- execute_test_cases:
+    use_entities: true
+- Add_note:
+    use_entities: true
+- Create_new_graph:
+    use_entities: true
+- Generate_test_cases:
+    use_entities: true
+- Modify_node:
+    use_entities: true
+- Create_test_cases:
+    use_entities: true
+- Input_graph:
+    use_entities: true
+- Test_case_group_info:
+    use_entities: true
+- Delete_multi_node:
+    use_entities: true
+- Function_support:
+    use_entities: true
+- reset_password:
+    use_entities: true
+- function_support:
+    use_entities: true
+- feature_list:
+    use_entities: true
+- information_list:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- Create_input:
+    use_entities: true
+- Execute_test_cases:
+    use_entities: true
+- image_input_addtext:
+    use_entities: true
+- image_input_filter:
+    use_entities: true
+- image_input_info:
+    use_entities: true
+- portfolio:
+    use_entities: true
+- image_input_upload:
+    use_entities: true
+- image_input_download:
+    use_entities: true
+- image_input_changes:
+    use_entities: true
+- image_input_addshape:
+    use_entities: true
+- image_input_editing:
+    use_entities: true
+- test_case_group:
+    use_entities: true
+- test_case_group_view:
+    use_entities: true
+- test_case_group_upload:
+    use_entities: true
+- test_case_group_download:
+    use_entities: true
 entities: []
 slots: {}
 responses:
@@ -80,12 +106,12 @@ responses:
       title: Information list
     text: Greeting. I am Chatbot Assistant power for the AI testing tool. My primary tasks are provide user information and guidace of the AI testing tool features. Here are some suggestion to explore our app.
   utter_feature_list:
-    - text: |
-        Our application are currently support is:
-         · Input and context tree modeling
-         · Input file
-         · Test case modeling,
-         · execute test case group
+  - text: |
+      Our application are currently support is:
+       · Input and context tree modeling
+       · Input file
+       · Test case modeling,
+       · execute test case group
   utter_information_list:
   - text: |
       These are information we would provide you:
@@ -96,8 +122,7 @@ responses:
   utter_goodbye:
   - text: It's my pleasure helping you. You are always welcome.
   utter_App_info:
-
-    - text: AI test tool is an application that assists programmers to analyze and create possible test cases based on user-provided database. The app also provides features that allow users to manage and edit the database to suit their purpose.
+  - text: AI test tool is an application that assists programmers to analyze and create possible test cases based on user-provided database. The app also provides features that allow users to manage and edit the database to suit their purpose.
   utter_Creator_info:
   - text: edit creator info
   utter_create_account:
@@ -121,27 +146,27 @@ responses:
   utter_Create_input:
   - text: input file from
   utter_data_file_info:
-    - text: We mainly support data files in JSON format. You can refer in https://www.tutorialspoint.com/json/json_quick_guide.htm
+  - text: We mainly support data files in JSON format. You can refer in https://www.tutorialspoint.com/json/json_quick_guide.htm
   utter_graph_info:
-    - text: |-
-        The graphical feature of the AI testing tool is a feature that allows users to
-        manage, interact, and modify the structure of the database in form of
-        diagrams. Some of the capabilities of the graphics feature include:
-        - generate a graphical database from an imported file.
-        - Reposition the data node to refactor the graphic data as desired.
-        - Adding and deleting data nodes.
-        - Export completed graph database.
+  - text: |-
+      The graphical feature of the AI testing tool is a feature that allows users to
+      manage, interact, and modify the structure of the database in form of
+      diagrams. Some of the capabilities of the graphics feature include:
+      - generate a graphical database from an imported file.
+      - Reposition the data node to refactor the graphic data as desired.
+      - Adding and deleting data nodes.
+      - Export completed graph database.
   utter_create_graph:
-    - buttons:
-        - payload: Input_graph
-          title: Auto
-        - payload: Add new node
-          title: Manual
-      text: |-
-        We provide two option in creating graph:
-        · Create automatically a graph by input data file.
-        · Create manually by adding data nodes.
-        Pick the option you want to explore
+  - buttons:
+    - payload: Input_graph
+      title: Auto
+    - payload: Add new node
+      title: Manual
+    text: |-
+      We provide two option in creating graph:
+      · Create automatically a graph by input data file.
+      · Create manually by adding data nodes.
+      Pick the option you want to explore
   utter_create_new_graph:
   - text: |-
       You can create a new graph by go to 
@@ -182,25 +207,25 @@ responses:
   utter_generate_test_cases:
   - text: sorry
   utter_please_rephrase:
-    - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
   utter_portfolio:
-    - text: sd
+  - text: sd
   utter_imageInputInfo:
-    - text: sd
+  - text: sd
   utter_imageInputUpload:
-    - text: sd
+  - text: sd
   utter_imageInputDownload:
-    - text: sd
+  - text: sd
   utter_imageInputEditing:
-    - text: sd
+  - text: sd
   utter_imageInputAddshape:
-    - text: sd
+  - text: sd
   utter_imageInputAddtext:
-    - text: sd
+  - text: sd
   utter_imageInputFilter:
-    - text: sd
+  - text: sd
   utter_imageInputChanges:
-    - text: sd
+  - text: sd
 actions:
 - did_that_help
 forms: {}
