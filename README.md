@@ -6,7 +6,7 @@
 - Answering some FAQs around AI Test Tool
 - Directing technical questions to specific documentation
 - Handling basic chitchat
-## 👩‍💻 Overview of the files
+## Overview of the files
 
 `data/stories.yml` - contains stories 
 
@@ -18,7 +18,7 @@
 
 `config.yml` - training configurations for the NLU pipeline and policy ensemble
 
-## 👷‍ Installation
+## Installation
 
 Install
 ```
