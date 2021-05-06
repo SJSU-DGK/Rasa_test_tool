@@ -127,7 +127,7 @@ responses:
     - text: edit creator info
   utter_create_account:
     - text: |
-        · Here is how to create a new account
+        Here is how to create a new account
         · First create an account with “Register Here”
         · Then enter your user name and password
         · The hit "Register" to create a new account
@@ -145,6 +145,7 @@ responses:
     - text: You can find the contact information in the webpage
   utter_Create_input:
     - text: |-
+        To create a new input, you can:
         · Go Navigation Login → Get Started → DATA ADMINISTRATION
         · Then you can upload your own file
   utter_data_file_info:
@@ -185,11 +186,13 @@ responses:
     - text: You can upload your JSON file in DATA ADMINISTRATION tab OR you can create the tree manually in DATA ADMINISTRATION WITH GRAPH tab under GET STARTED
   utter_add_note:
     - text: |-
+        To add a new node, you can:
         · Go Navigation Login → Get Started → DATA ADMINISTRATION WITH GRAPH
         · Select your tree, Move mouse over the node
         · Right click on it and an option to add the node will be displayed.
   utter_delete_node:
     - text: |-
+        To delete a node, you can:
         · Go Navigation Login → Get Started → DATA ADMINISTRATION WITH GRAPH
         · Select your tree, Move mouse over the node
         · Right click on it and an option to delete the node will be displayed.
@@ -197,6 +200,7 @@ responses:
     - text: Sorry, you have to delete nodes one by one.
   utter_modify_node:
     - text: |-
+        To modify node, you can:
         · Go Navigation
         · Login → Get Started → DATA ADMINISTRATION WITH GRAPH
         · Select your tree, Move mouse over the node
@@ -208,12 +212,15 @@ responses:
   utter_create_test_cases:
     - text: We provide two possible options in creating graph which are make a new graph from scratch and draw it from the imported data file.
   utter_execute_test_cases:
-    - text: · Go Navigation
+    - text: |-
+        To execute test case, you can:
+        · Go Navigation
         · Login → Get Started → TEST CASE GROUP
         · Select "Execute Test Case"
         · Then it will execute the test case group for you
   utter_generate_test_cases:
     - text: |-
+        To generate test case, you can:
         · Go Navigation
         · Login → Get Started → TEST CASE GROUP
         · Select "New Group"
@@ -222,49 +229,59 @@ responses:
     - text: I'm sorry, I didn't quite understand that. Could you rephrase?
   utter_portfolio:
     - text: |-
+        To access Portfolio, you can:
         · Go Navigation
         · Login → PORTFOLIO
         · Then you can start editing your portfolio
   utter_imageInputInfo:
     - text: |-
+        Image Input Modulation is the tool to edit image to create augmentation training data
+        You can try it yourself at: 
         · Go Navigation
         · Login → Get Started → INPUT IMAGE MODULATION
         · Then you can start editing your image
   utter_imageInputUpload:
     - text: |-
+        To upload image, you can:
         · Go Navigation
         · Login → Get Started → INPUT IMAGE MODULATION
         · Then select "Load" to upload your image
   utter_imageInputDownload:
     - text: |-
+        To edit image, you can:
         · Go Navigation
         · Login → Get Started → INPUT IMAGE MODULATION
         · Then select "Download" to upload your image
   utter_imageInputEditing:
     - text: |-
+        To edit image, you can:
         · Go Navigation
         · Login → Get Started → INPUT IMAGE MODULATION
         · Then you can start editing your image
   utter_imageInputAddshape:
     - text: |-
+        To add shape to your image, you can:
         · Go Navigation
         · Login → Get Started → INPUT IMAGE MODULATION
         · Select "Shape" button in the Tool bar
         · Then you can start editing your image
   utter_imageInputAddtext:
     - text: |-
+        To add text to your image, you can:
         · Go Navigation
         · Login → Get Started → INPUT IMAGE MODULATION
         · Select "Text" button in the Tool bar
         · Then you can start editing your image
   utter_imageInputFilter:
     - text: |-
+        To add filter to your image, you can:
         · Go Navigation
         · Login → Get Started → INPUT IMAGE MODULATION
         · Select the filter option you want to use
         · Then you can start editing your image
   utter_imageInputChanges:
     - text: |-
+        To change image, you can:
         · Go Navigation
         · Login → Get Started → INPUT IMAGE MODULATION
         · Then select "Load" to upload your image
