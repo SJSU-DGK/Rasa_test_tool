@@ -144,7 +144,9 @@ responses:
   utter_contact_admin:
     - text: You can find the contact information in the webpage
   utter_Create_input:
-    - text: input file from
+    - text: |-
+        · Go Navigation Login → Get Started → DATA ADMINISTRATION
+        · Then you can upload your own file
   utter_data_file_info:
     - text: We mainly support data files in JSON format. You can refer in https://www.tutorialspoint.com/json/json_quick_guide.htm
   utter_graph_info:
