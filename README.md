@@ -18,9 +18,9 @@ SJSU Undergraduated Senior Project of Software Engineering
     │   └── rules.yml            # Special rules
     │   └── stories.yml          # Chat stories
     ├── images                   # Images for custom chat
-    ├── model                    # Automated tests
+    ├── model                    # Training models
     ├── result                   # NLU pipeline and policy ensemble
-    ├── tests                    # Tools and utilities
+    ├── tests                    # Automated tests
     └── domain.yml               # The domain file, including bot response templates
     └── config.yml               # Training configurations for the NLU pipeline and policy ensemble
     └── README.md
