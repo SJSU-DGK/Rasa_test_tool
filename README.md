@@ -1,4 +1,7 @@
 # AI Test Tool Chatbot
+
+SJSU Undergraduated Senior Project of Software Engineering
+
 ## Features
 - This is a chatbot to support [AI Test Tool](http://3dmodeler.us-east-2.elasticbeanstalk.com/)
 - Understanding the AI Test Tool
@@ -8,15 +11,19 @@
 - Handling basic chitchat
 ## Overview of the files
 
-`data/stories.yml` - contains stories 
-
-`data/nlu.yml` - contains NLU training data
-
-`actions` - contains custom action code
-
-`domain.yml` - the domain file, including bot response templates
-
-`config.yml` - training configurations for the NLU pipeline and policy ensemble
+    .
+    ├── actions                  # Custom action for chatbot
+    ├── data                     # Training data
+    │   ├── nlu.yml              # NLU training data, Intents
+    │   └── rules.yml            # Special rules
+    │   └── stories.yml          # Chat stories
+    ├── images                   # Images for custom chat
+    ├── model                    # Automated tests
+    ├── result                   # NLU pipeline and policy ensemble
+    ├── tests                    # Tools and utilities
+    └── domain.yml               # The domain file, including bot response templates
+    └── config.yml               # Training configurations for the NLU pipeline and policy ensemble
+    └── README.md
 
 ## Installation
 
