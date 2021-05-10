@@ -1,6 +1,15 @@
+
+**Computer Engineering**
+
+**San José State University || College of Engineering**
+
+**Spring 2020**
+
+<div align="center"><h1>Undergraduated Senior Project Project# U28</h1></div>
+
 # AI Test Tool Chatbot
 
-SJSU Undergraduated Senior Project of Software Engineering
+
 
 ## Features
 - This is a chatbot to support [AI Test Tool](http://3dmodeler.us-east-2.elasticbeanstalk.com/)
@@ -9,6 +18,9 @@ SJSU Undergraduated Senior Project of Software Engineering
 - Answering some FAQs around AI Test Tool
 - Directing technical questions to specific documentation
 - Handling basic chitchat
+
+![Imgur](https://i.imgur.com/6UD2qEz.png)
+
 ## Overview of the files
 
     .
