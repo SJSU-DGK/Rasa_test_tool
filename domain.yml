@@ -1,291 +1,291 @@
-version: "2.0"
+version: '2.0'
 config:
   store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-  - greet:
-      use_entities: true
-  - goodbye:
-      use_entities: true
-  - affirm:
-      use_entities: true
-  - deny:
-      use_entities: true
-  - Reset_password:
-      use_entities: true
-  - Creator_info:
-      use_entities: true
-  - Greet_input:
-      use_entities: true
-  - create_account:
-      use_entities: true
-  - Contact_admin:
-      use_entities: true
-  - Get_start:
-      use_entities: true
-  - data_file_info:
-      use_entities: true
-  - App_info:
-      use_entities: true
-  - Delete_node:
-      use_entities: true
-  - Graph_info:
-      use_entities: true
-  - Create_graph:
-      use_entities: true
-  - execute_test_cases:
-      use_entities: true
-  - Add_note:
-      use_entities: true
-  - Create_new_graph:
-      use_entities: true
-  - Generate_test_cases:
-      use_entities: true
-  - Modify_node:
-      use_entities: true
-  - Create_test_cases:
-      use_entities: true
-  - Input_graph:
-      use_entities: true
-  - Test_case_group_info:
-      use_entities: true
-  - Delete_multi_node:
-      use_entities: true
-  - Function_support:
-      use_entities: true
-  - reset_password:
-      use_entities: true
-  - function_support:
-      use_entities: true
-  - feature_list:
-      use_entities: true
-  - information_list:
-      use_entities: true
-  - nlu_fallback:
-      use_entities: true
-  - Create_input:
-      use_entities: true
-  - Execute_test_cases:
-      use_entities: true
-  - image_input_addtext:
-      use_entities: true
-  - image_input_filter:
-      use_entities: true
-  - image_input_info:
-      use_entities: true
-  - portfolio:
-      use_entities: true
-  - image_input_upload:
-      use_entities: true
-  - image_input_download:
-      use_entities: true
-  - image_input_changes:
-      use_entities: true
-  - image_input_addshape:
-      use_entities: true
-  - image_input_editing:
-      use_entities: true
-  - test_case_group:
-      use_entities: true
-  - test_case_group_view:
-      use_entities: true
-  - test_case_group_upload:
-      use_entities: true
-  - test_case_group_download:
-      use_entities: true
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- Reset_password:
+    use_entities: true
+- Creator_info:
+    use_entities: true
+- Greet_input:
+    use_entities: true
+- create_account:
+    use_entities: true
+- Contact_admin:
+    use_entities: true
+- Get_start:
+    use_entities: true
+- data_file_info:
+    use_entities: true
+- App_info:
+    use_entities: true
+- Delete_node:
+    use_entities: true
+- Graph_info:
+    use_entities: true
+- Create_graph:
+    use_entities: true
+- execute_test_cases:
+    use_entities: true
+- Add_note:
+    use_entities: true
+- Create_new_graph:
+    use_entities: true
+- Generate_test_cases:
+    use_entities: true
+- Modify_node:
+    use_entities: true
+- Create_test_cases:
+    use_entities: true
+- Input_graph:
+    use_entities: true
+- Test_case_group_info:
+    use_entities: true
+- Delete_multi_node:
+    use_entities: true
+- Function_support:
+    use_entities: true
+- reset_password:
+    use_entities: true
+- function_support:
+    use_entities: true
+- feature_list:
+    use_entities: true
+- information_list:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- Create_input:
+    use_entities: true
+- Execute_test_cases:
+    use_entities: true
+- image_input_addtext:
+    use_entities: true
+- image_input_filter:
+    use_entities: true
+- image_input_info:
+    use_entities: true
+- portfolio:
+    use_entities: true
+- image_input_upload:
+    use_entities: true
+- image_input_download:
+    use_entities: true
+- image_input_changes:
+    use_entities: true
+- image_input_addshape:
+    use_entities: true
+- image_input_editing:
+    use_entities: true
+- test_case_group:
+    use_entities: true
+- test_case_group_view:
+    use_entities: true
+- test_case_group_upload:
+    use_entities: true
+- test_case_group_download:
+    use_entities: true
 entities: []
 slots: {}
 responses:
   utter_greet:
-    - buttons:
-        - payload: Feature list
-          title: Feature list
-        - payload: Information list
-          title: Information list
-      text: Greeting. I am Chatbot Assistant power for the AI testing tool. My primary tasks are provide user information and guidace of the AI testing tool features. Here are some suggestion to explore our app.
+  - buttons:
+    - payload: Feature list
+      title: Feature list
+    - payload: Information list
+      title: Information list
+    text: Greeting. I am Chatbot Assistant power for the AI testing tool. My primary tasks are provide user information and guidace of the AI testing tool features. Here are some suggestion to explore our app.
   utter_feature_list:
-    - text: |
-        Our application are currently support is:
-         · Input and context tree modeling
-         · Input file
-         · Test case modeling,
-         · execute test case group
+  - text: |
+      Our application are currently support is:
+       · Input and context tree modeling
+       · Input file
+       · Test case modeling,
+       · execute test case group
   utter_information_list:
-    - text: |
-        These are information we would provide you:
-         · The author
-         · File type
+  - text: |
+      These are information we would provide you:
+       · The author
+       · File type
   utter_did_that_help:
-    - text: Did that help you?
+  - text: Did that help you?
   utter_goodbye:
-    - text: It's my pleasure helping you. You are always welcome.
+  - text: It's my pleasure helping you. You are always welcome.
   utter_App_info:
-    - text: AI test tool is an application that assists programmers to analyze and create possible test cases based on user-provided database. The app also provides features that allow users to manage and edit the database to suit their purpose.
+  - text: AI test tool is an application that assists programmers to analyze and create possible test cases based on user-provided database. The app also provides features that allow users to manage and edit the database to suit their purpose.
   utter_Creator_info:
-    - text: edit creator info
+  - text: edit creator info
   utter_create_account:
-    - text: |
-        Here is how to create a new account
-        · First create an account with “Register Here”
-        · Then enter your user name and password
-        · The hit "Register" to create a new account
+  - text: |
+      Here is how to create a new account
+      · First create an account with “Register Here”
+      · Then enter your user name and password
+      · The hit "Register" to create a new account
   utter_reset_password:
-    - text: |-
-        Unfortunately, we currently do not have this facility
-        User will need to contact the admin
+  - text: |-
+      Unfortunately, we currently do not have this facility
+      User will need to contact the admin
   utter_feel_good:
-    - text: It's my pleasure helping you.
+  - text: It's my pleasure helping you.
   utter_feel_bad:
-    - text: How can we make it better?
+  - text: How can we make it better?
   utter_Author:
-    - text: You can find the contact information in the webpage
+  - text: You can find the contact information in the webpage
   utter_contact_admin:
-    - text: You can find the contact information in the webpage
+  - text: You can find the contact information in the webpage
   utter_Create_input:
-    - text: |-
-        To create a new input, you can:
-        · Go Navigation Login → Get Started → DATA ADMINISTRATION
-        · Then you can upload your own file
+  - text: |-
+      To create a new input, you can:
+      · Go Navigation Login → Get Started → DATA ADMINISTRATION
+      · Then you can upload your own file
   utter_data_file_info:
-    - text: We mainly support data files in JSON format. You can refer in https://www.tutorialspoint.com/json/json_quick_guide.htm
+  - text: We mainly support data files in JSON format. You can refer in https://www.tutorialspoint.com/json/json_quick_guide.htm
   utter_graph_info:
-    - text: |-
-        The graphical feature of the AI testing tool is a feature that allows users to
-        manage, interact, and modify the structure of the database in form of
-        diagrams. Some of the capabilities of the graphics feature include:
-        - generate a graphical database from an imported file.
-        - Reposition the data node to refactor the graphic data as desired.
-        - Adding and deleting data nodes.
-        - Export completed graph database.
+  - text: |-
+      The graphical feature of the AI testing tool is a feature that allows users to
+      manage, interact, and modify the structure of the database in form of
+      diagrams. Some of the capabilities of the graphics feature include:
+      - generate a graphical database from an imported file.
+      - Reposition the data node to refactor the graphic data as desired.
+      - Adding and deleting data nodes.
+      - Export completed graph database.
   utter_create_graph:
-    - buttons:
-        - payload: Input_graph
-          title: Auto
-        - payload: Add new node
-          title: Manual
-      text: |-
-        We provide two option in creating graph:
-        · Create automatically a graph by input data file.
-        · Create manually by adding data nodes.
-        Pick the option you want to explore
+  - buttons:
+    - payload: Input_graph
+      title: Auto
+    - payload: Add new node
+      title: Manual
+    text: |-
+      We provide two option in creating graph:
+      · Create automatically a graph by input data file.
+      · Create manually by adding data nodes.
+      Pick the option you want to explore
   utter_create_new_graph:
-    - text: |-
-        You can create a new graph by go to 
-        · Get Started
-        · Data Administration with graph
-        · Then create a new graph
+  - text: |-
+      You can create a new graph by go to 
+      · Get Started
+      · Data Administration with graph
+      · Then create a new graph
   utter_input_graph:
-    - text: |-
-        You can upload your graph by go to 
-        · Get Started
-        · Data Administration
-        · Then upload your graph
+  - text: |-
+      You can upload your graph by go to 
+      · Get Started
+      · Data Administration
+      · Then upload your graph
   utter_input_tree:
-    - text: You can upload your JSON file in DATA ADMINISTRATION tab OR you can create the tree manually in DATA ADMINISTRATION WITH GRAPH tab under GET STARTED
+  - text: You can upload your JSON file in DATA ADMINISTRATION tab OR you can create the tree manually in DATA ADMINISTRATION WITH GRAPH tab under GET STARTED
   utter_add_note:
-    - text: |-
-        To add a new node, you can:
-        · Go Navigation Login → Get Started → DATA ADMINISTRATION WITH GRAPH
-        · Select your tree, Move mouse over the node
-        · Right click on it and an option to add the node will be displayed.
+  - text: |-
+      To add a new node, you can:
+      · Go Navigation Login → Get Started → DATA ADMINISTRATION WITH GRAPH
+      · Select your tree, Move mouse over the node
+      · Right click on it and an option to add the node will be displayed.
   utter_delete_node:
-    - text: |-
-        To delete a node, you can:
-        · Go Navigation Login → Get Started → DATA ADMINISTRATION WITH GRAPH
-        · Select your tree, Move mouse over the node
-        · Right click on it and an option to delete the node will be displayed.
+  - text: |-
+      To delete a node, you can:
+      · Go Navigation Login → Get Started → DATA ADMINISTRATION WITH GRAPH
+      · Select your tree, Move mouse over the node
+      · Right click on it and an option to delete the node will be displayed.
   utter_delete_multi_node:
-    - text: Sorry, you have to delete nodes one by one.
+  - text: Sorry, you have to delete nodes one by one.
   utter_modify_node:
-    - text: |-
-        To modify node, you can:
-        · Go Navigation
-        · Login → Get Started → DATA ADMINISTRATION WITH GRAPH
-        · Select your tree, Move mouse over the node
-        · Right click on it and an option to modify the node will be displayed.
+  - text: |-
+      To modify node, you can:
+      · Go Navigation
+      · Login → Get Started → DATA ADMINISTRATION WITH GRAPH
+      · Select your tree, Move mouse over the node
+      · Right click on it and an option to modify the node will be displayed.
   utter_test_case_group_info:
-    - text: |-
-        AI testing tools provide users with a tool to help manage data in the form of data tree.
-        Users can freely interact and edit their data by adding, deleting, and moving data nodes to suit their purpose.
+  - text: |-
+      AI testing tools provide users with a tool to help manage data in the form of data tree.
+      Users can freely interact and edit their data by adding, deleting, and moving data nodes to suit their purpose.
   utter_create_test_cases:
-    - text: We provide two possible options in creating graph which are make a new graph from scratch and draw it from the imported data file.
+  - text: We provide two possible options in creating graph which are make a new graph from scratch and draw it from the imported data file.
   utter_execute_test_cases:
-    - text: |-
-        To execute test case, you can:
-        · Go Navigation
-        · Login → Get Started → TEST CASE GROUP
-        · Select "Execute Test Case"
-        · Then it will execute the test case group for you
+  - text: |-
+      To execute test case, you can:
+      · Go Navigation
+      · Login → Get Started → TEST CASE GROUP
+      · Select "Execute Test Case"
+      · Then it will execute the test case group for you
   utter_generate_test_cases:
-    - text: |-
-        To generate test case, you can:
-        · Go Navigation
-        · Login → Get Started → TEST CASE GROUP
-        · Select "New Group"
-        · Then you can create a new test case group of your own
+  - text: |-
+      To generate test case, you can:
+      · Go Navigation
+      · Login → Get Started → TEST CASE GROUP
+      · Select "New Group"
+      · Then you can create a new test case group of your own
   utter_please_rephrase:
-    - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
   utter_portfolio:
-    - text: |-
-        To access Portfolio, you can:
-        · Go Navigation
-        · Login → PORTFOLIO
-        · Then you can start editing your portfolio
+  - text: |-
+      To access Portfolio, you can:
+      · Go Navigation
+      · Login → PORTFOLIO
+      · Then you can start editing your portfolio
   utter_imageInputInfo:
-    - text: |-
-        Image Input Modulation is the tool to edit image to create augmentation training data
-        You can try it yourself at: 
-        · Go Navigation
-        · Login → Get Started → INPUT IMAGE MODULATION
-        · Then you can start editing your image
+  - text: |-
+      Image Input Modulation is the tool to edit image to create augmentation training data
+      You can try it yourself at: 
+      · Go Navigation
+      · Login → Get Started → INPUT IMAGE MODULATION
+      · Then you can start editing your image
   utter_imageInputUpload:
-    - text: |-
-        To upload image, you can:
-        · Go Navigation
-        · Login → Get Started → INPUT IMAGE MODULATION
-        · Then select "Load" to upload your image
+  - text: |-
+      To upload image, you can:
+      · Go Navigation
+      · Login → Get Started → INPUT IMAGE MODULATION
+      · Then select "Load" to upload your image
   utter_imageInputDownload:
-    - text: |-
-        To edit image, you can:
-        · Go Navigation
-        · Login → Get Started → INPUT IMAGE MODULATION
-        · Then select "Download" to upload your image
+  - text: |-
+      To edit image, you can:
+      · Go Navigation
+      · Login → Get Started → INPUT IMAGE MODULATION
+      · Then select "Download" to upload your image
   utter_imageInputEditing:
-    - text: |-
-        To edit image, you can:
-        · Go Navigation
-        · Login → Get Started → INPUT IMAGE MODULATION
-        · Then you can start editing your image
+  - text: |-
+      To edit image, you can:
+      · Go Navigation
+      · Login → Get Started → INPUT IMAGE MODULATION
+      · Then you can start editing your image
   utter_imageInputAddshape:
-    - text: |-
-        To add shape to your image, you can:
-        · Go Navigation
-        · Login → Get Started → INPUT IMAGE MODULATION
-        · Select "Shape" button in the Tool bar
-        · Then you can start editing your image
+  - text: |-
+      To add shape to your image, you can:
+      · Go Navigation
+      · Login → Get Started → INPUT IMAGE MODULATION
+      · Select "Shape" button in the Tool bar
+      · Then you can start editing your image
   utter_imageInputAddtext:
-    - text: |-
-        To add text to your image, you can:
-        · Go Navigation
-        · Login → Get Started → INPUT IMAGE MODULATION
-        · Select "Text" button in the Tool bar
-        · Then you can start editing your image
+  - text: |-
+      To add text to your image, you can:
+      · Go Navigation
+      · Login → Get Started → INPUT IMAGE MODULATION
+      · Select "Text" button in the Tool bar
+      · Then you can start editing your image
   utter_imageInputFilter:
-    - text: |-
-        To add filter to your image, you can:
-        · Go Navigation
-        · Login → Get Started → INPUT IMAGE MODULATION
-        · Select the filter option you want to use
-        · Then you can start editing your image
+  - text: |-
+      To add filter to your image, you can:
+      · Go Navigation
+      · Login → Get Started → INPUT IMAGE MODULATION
+      · Select the filter option you want to use
+      · Then you can start editing your image
   utter_imageInputChanges:
-    - text: |-
-        To change image, you can:
-        · Go Navigation
-        · Login → Get Started → INPUT IMAGE MODULATION
-        · Then select "Load" to upload your image
+  - text: |-
+      To change image, you can:
+      · Go Navigation
+      · Login → Get Started → INPUT IMAGE MODULATION
+      · Then select "Load" to upload your image
 actions:
-  - did_that_help
+- did_that_help
 forms: {}
 e2e_actions: []
