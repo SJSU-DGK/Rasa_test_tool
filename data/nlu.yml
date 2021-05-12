@@ -18,6 +18,8 @@ nlu:
     - hello!
     - hey!
     - What’s up?
+    - Hi
+    - Hello
 - intent: goodbye
   examples: |
     - good afternoon
@@ -81,6 +83,7 @@ nlu:
     - what is this for?
     - Can you tell me about the app?
     - tell me about the app
+    - What's AI test tool?
 - intent: Creator_info
   examples: |
     - Who create the AI testing tool?
@@ -300,6 +303,7 @@ nlu:
     - upload image
     - image upload
     - image input upload
+    - How to upload image
 - intent: image_input_download
   examples: |
     - how to download image
@@ -351,3 +355,9 @@ nlu:
     - how to go back and forth image changes
     - how to go back and forth changes history
     - undo changes history
+- intent: execute_test_cases
+  examples: |
+    - exacute test case
+- intent: mood_great
+  examples: |
+    - i am good how are you
